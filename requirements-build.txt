@@ -1,0 +1,6 @@
+# Optional report and video rebuild dependencies; engine uses standard library.
+reportlab
+pypdf
+Pillow
+numpy
+# Graphviz and FFmpeg are separate system programs.

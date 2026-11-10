@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+node_modules/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+video/preview_*.png
+video/render.log
+video/soundtrack.wav
+report_body.pdf
