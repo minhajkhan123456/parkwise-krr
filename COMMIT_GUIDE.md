@@ -1,7 +1,7 @@
 # ParkWise commit guide
 
 A **commit** is a named snapshot of a change. A **push** uploads those commits to
-GitHub. One push can upload all seven commits while keeping each commit visible.
+GitHub. One push can upload several commits while keeping each commit visible.
 Each commit groups a related project component so its purpose and changes are easy to review.
 
 | No. | Commit message | What it adds | What to explain in viva |
@@ -36,6 +36,24 @@ core Python model and JavaScript source. Commit 4 provides the runnable interfac
 and optional API. Commit 5 provides validation and exported evidence. Commit 6
 adds the report. Commit 7 completes the demonstration package. The full project
 is at the last commit; earlier snapshots intentionally contain fewer components.
+
+## Published commit IDs
+
+| Commit | ID |
+| --- | --- |
+| Repository initialization | `5d5a589` |
+| 1. Setup and documentation | `ec49a6c` |
+| 2. Knowledge models | `9299ac3` |
+| 3. Reasoning engines | `13f04c6` |
+| 4. Simulator and API | `34f4837` |
+| 5. Verification | `aa84368` |
+| 6. Report and diagrams | `7c72508` |
+| 7. Animated demonstration | `9733407` |
+
+The next documentation commit completes the four confirmed names and roll numbers
+in the README, report title page, grading sheet and participation section, and
+adds this published history. Suggested responsibilities are not a record of
+completed individual contributions.
 
 ## Future commits
 
