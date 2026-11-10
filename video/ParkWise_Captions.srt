@@ -1,0 +1,59 @@
+1
+00:00:00,000 --> 00:00:06,000
+An animated demonstration of the working rule engine. All prices, sensors and vehicles are synthetic.
+
+2
+00:00:06,000 --> 00:00:14,000
+Every bay has a type, size limit, hourly rate and operational status. The system searches for a suitable space.
+
+3
+00:00:14,000 --> 00:00:26,000
+R1 meets the account, time, size and budget conditions. G1 is the nearest eligible bay; G2 is an alternative.
+
+4
+00:00:26,000 --> 00:00:36,000
+Forward chaining derives the candidate from facts. Backward chaining independently verifies the same goal.
+
+5
+00:00:36,000 --> 00:00:48,000
+G1 already has an overlapping booking. The engine excludes G1 and recommends G2 without double-booking.
+
+6
+00:00:48,000 --> 00:00:58,000
+Only a compatible charging bay with a working charger can qualify. E1 passes; E2 has a charger fault.
+
+7
+00:00:58,000 --> 00:01:08,000
+The badge satisfies the accessible-bay rule. A1 is the nearest eligible option. Without a badge, it would be excluded.
+
+8
+00:01:08,000 --> 00:01:16,000
+Closing G1 blocks new allocations. The existing R1 booking stays visible so the operator can handle the disruption.
+
+9
+00:01:16,000 --> 00:01:24,000
+G2 is occupied and no other bay fits R1. Reallocation fails safely: R1 is not cancelled or silently discarded.
+
+10
+00:01:24,000 --> 00:01:30,000
+The operator cancels R2. Its interval is released, allowing R1 to be evaluated for a replacement.
+
+11
+00:01:30,000 --> 00:01:42,000
+The engine proves G2 eligible. Only then is R1 replaced in one state update. The animation shows the new assignment.
+
+12
+00:01:42,000 --> 00:01:54,000
+A booking ending at 10:00 does not overlap one starting at 10:00. Completed intervals stop blocking later requests.
+
+13
+00:01:54,000 --> 00:02:04,000
+An unknown reading on G1 produces a manual-review conclusion. The system recommends G2 instead of assuming G1 is empty.
+
+14
+00:02:04,000 --> 00:02:14,000
+G3 fits the smaller vehicle and costs PKR 50. More expensive or incompatible spaces are excluded before ranking.
+
+15
+00:02:14,000 --> 00:02:22,000
+Frames, semantic relationships, formal logic and Horn rules work together to explain parking decisions.
