@@ -72,8 +72,8 @@ pip install reportlab
 Install Graphviz and put dot on PATH to regenerate diagrams.
 python build_diagrams.py
 python build_report.py
-Edit STUDENTS, SECTION, INSTRUCTOR and DATE in build_report.py before submission.
-Record actual contributions; the suggested team allocation is not a claim of work.
+Team details and contribution briefs are recorded in build_report.py and README.md.
+Enter the confirmed submission date in DATE before submission.
 
 VALIDATION EVIDENCE
 44 Python tests passed.

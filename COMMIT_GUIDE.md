@@ -50,10 +50,11 @@ is at the last commit; earlier snapshots intentionally contain fewer components.
 | 6. Report and diagrams | `7c72508` |
 | 7. Animated demonstration | `9733407` |
 
-The next documentation commit completes the four confirmed names and roll numbers
-in the README, report title page, grading sheet and participation section, and
-adds this published history. Suggested responsibilities are not a record of
-completed individual contributions.
+The team-details documentation update completes the four confirmed names and roll
+numbers in the README, report title page, grading sheet and participation section.
+It records Section B, instructor Sure Shahwar, and brief contributions without
+percentages. Minhaj also coordinates the final report. The submission date remains
+blank until confirmed. Existing project commits are preserved.
 
 ## Future commits
 

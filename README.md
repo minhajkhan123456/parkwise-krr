@@ -4,6 +4,18 @@ CT-351 Knowledge Representation & Reasoning complex computing project.
 A synthetic ten-bay parking facility combines frames, semantic relations, formal
 logic specifications and finite Horn inference to explain allocation decisions.
 
+## Team
+
+**Section:** B  
+**Instructor:** Sure Shahwar
+
+| Member | Roll number | Contribution brief |
+| --- | --- | --- |
+| Minhaj Khan | AI-23301 | Domain analysis, frames, semantic relations and final report coordination |
+| Faraz Khan | AI-23047 | FOL/DL specification, integrity checks and documentation |
+| Raied Khan | AI-23046 | Horn rules, inference algorithms and reasoning traces |
+| Sabih Salam | AI-23040 | Simulation interface, scenario testing and demonstration preparation |
+
 ## Run the project
 
 Download or clone this repository, then open **ParkWise_Simulation.html** in a
@@ -84,6 +96,5 @@ named superclass closure and disjointness; it is not a complete OWL reasoner.
 The FOL model is a specification, not an unrestricted automated theorem prover.
 All prices, facility states and examples are synthetic.
 
-Group member details and actual contributions should be completed in the report
-before submission. Source references are included in the report; the bundled
+Enter the confirmed submission date on the report title page before submission. Source references are included in the report; the bundled
 font license is retained in fonts/.
