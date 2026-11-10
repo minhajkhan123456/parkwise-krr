@@ -1,0 +1,46 @@
+@prefix : <https://example.org/parkwise#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+:ParkWise a owl:Ontology .
+:Facility a owl:Class .
+:Bay a owl:Class .
+:GeneralBay a owl:Class ; rdfs:subClassOf :Bay .
+:AccessibleBay a owl:Class ; rdfs:subClassOf :Bay .
+:ChargingBay a owl:Class ; rdfs:subClassOf :Bay .
+:MotorcycleBay a owl:Class ; rdfs:subClassOf :Bay .
+[] a owl:AllDisjointClasses ; owl:members (:GeneralBay :AccessibleBay :ChargingBay :MotorcycleBay) .
+:Request a owl:Class .
+:Booking a owl:Class ; rdfs:subClassOf :Request, [a owl:Restriction ; owl:onProperty :forBay ; owl:someValuesFrom :Bay] .
+:Vehicle a owl:Class .
+:ElectricVehicle a owl:Class ; rdfs:subClassOf :Vehicle .
+:Motorcycle a owl:Class ; rdfs:subClassOf :Vehicle ; owl:disjointWith :ElectricVehicle .
+:ChargingRequest a owl:Class ; rdfs:subClassOf :Request, [a owl:Restriction ; owl:onProperty :usesVehicle ; owl:someValuesFrom :ElectricVehicle] .
+:forBay a owl:ObjectProperty ; rdfs:domain :Booking ; rdfs:range :Bay .
+:usesVehicle a owl:ObjectProperty ; rdfs:domain :Request ; rdfs:range :Vehicle .
+:partOf a owl:ObjectProperty ; rdfs:domain :Bay ; rdfs:range :Facility .
+:Bay rdfs:subClassOf [a owl:Restriction ; owl:onProperty :partOf ; owl:someValuesFrom :Facility] .
+:lot a :Facility .
+:G1 a :GeneralBay ; :partOf :lot .
+:G2 a :GeneralBay ; :partOf :lot .
+:A1 a :AccessibleBay ; :partOf :lot .
+:E1 a :ChargingBay ; :partOf :lot .
+:M1 a :MotorcycleBay ; :partOf :lot .
+
+:Car a owl:Class ; rdfs:subClassOf :Vehicle ; owl:disjointWith :Motorcycle .
+:Zone a owl:Class .
+:GroundZone a owl:Class ; rdfs:subClassOf :Zone .
+:UpperZone a owl:Class ; rdfs:subClassOf :Zone .
+:locatedIn a owl:ObjectProperty ; rdfs:domain :Bay ; rdfs:range :Zone .
+:ground a :GroundZone .
+:upper a :UpperZone .
+:chargingCourt a :Zone .
+:G1 a :GeneralBay ; :partOf :lot ; :locatedIn :ground .
+:G2 a :GeneralBay ; :partOf :lot ; :locatedIn :ground .
+:A1 a :AccessibleBay ; :partOf :lot ; :locatedIn :ground .
+:E1 a :ChargingBay ; :partOf :lot ; :locatedIn :chargingCourt .
+:M1 a :MotorcycleBay ; :partOf :lot ; :locatedIn :ground .
+:G3 a :GeneralBay ; :partOf :lot ; :locatedIn :upper .
+:G4 a :GeneralBay ; :partOf :lot ; :locatedIn :ground .
+:E2 a :ChargingBay ; :partOf :lot ; :locatedIn :chargingCourt .
+:A2 a :AccessibleBay ; :partOf :lot ; :locatedIn :upper .
+:G5 a :GeneralBay ; :partOf :lot ; :locatedIn :upper .

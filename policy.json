@@ -1,0 +1,340 @@
+[
+  {
+    "id": "H01",
+    "scope": "request",
+    "head": "authorized({r})",
+    "body": [
+      "verified({r})",
+      "account_enabled({r})"
+    ],
+    "meaning": "Verified and enabled account"
+  },
+  {
+    "id": "H02",
+    "scope": "request",
+    "head": "schedulable({r})",
+    "body": [
+      "request({r})",
+      "valid_window({r})",
+      "inside_hours({r})"
+    ],
+    "meaning": "Whole interval inside facility hours"
+  },
+  {
+    "id": "H03",
+    "scope": "request",
+    "head": "car_sized({r})",
+    "body": [
+      "car({r})"
+    ],
+    "meaning": "Car body category"
+  },
+  {
+    "id": "H04",
+    "scope": "request",
+    "head": "car_sized({r})",
+    "body": [
+      "ev({r})"
+    ],
+    "meaning": "EV body category"
+  },
+  {
+    "id": "H05",
+    "scope": "bay",
+    "head": "size_fit({r},{b})",
+    "body": [
+      "car_sized({r})",
+      "car_space({b})"
+    ],
+    "meaning": "Car-sized vehicle fits car-space category"
+  },
+  {
+    "id": "H06",
+    "scope": "bay",
+    "head": "size_fit({r},{b})",
+    "body": [
+      "motorcycle({r})",
+      "motorcycle_space({b})"
+    ],
+    "meaning": "Motorcycle category match"
+  },
+  {
+    "id": "H07",
+    "scope": "bay",
+    "head": "access_fit({r},{b})",
+    "body": [
+      "request({r})",
+      "unrestricted({b})"
+    ],
+    "meaning": "Unrestricted bay access"
+  },
+  {
+    "id": "H08",
+    "scope": "bay",
+    "head": "access_fit({r},{b})",
+    "body": [
+      "badge({r})",
+      "accessible({b})"
+    ],
+    "meaning": "Badge permits accessible bay"
+  },
+  {
+    "id": "H09",
+    "scope": "bay",
+    "head": "service_fit({r},{b})",
+    "body": [
+      "no_charge({r})",
+      "noncharging({b})"
+    ],
+    "meaning": "Non-charging request uses non-charging bay"
+  },
+  {
+    "id": "H10",
+    "scope": "bay",
+    "head": "service_fit({r},{b})",
+    "body": [
+      "charge({r})",
+      "ev({r})",
+      "charging({b})",
+      "charger_ready({b})"
+    ],
+    "meaning": "Charging requires compatible working equipment"
+  },
+  {
+    "id": "H11",
+    "scope": "bay",
+    "head": "dimension_fit({r},{b})",
+    "body": [
+      "height_ok({r},{b})",
+      "width_ok({r},{b})"
+    ],
+    "meaning": "Both physical dimensions fit"
+  },
+  {
+    "id": "H12",
+    "scope": "bay",
+    "head": "commercial_fit({r},{b})",
+    "body": [
+      "budget_ok({r},{b})",
+      "duration_ok({r},{b})"
+    ],
+    "meaning": "Price estimate and maximum stay accepted"
+  },
+  {
+    "id": "H13",
+    "scope": "bay",
+    "head": "compatible({r},{b})",
+    "body": [
+      "size_fit({r},{b})",
+      "access_fit({r},{b})",
+      "service_fit({r},{b})",
+      "dimension_fit({r},{b})"
+    ],
+    "meaning": "All compatibility conditions hold"
+  },
+  {
+    "id": "H14",
+    "scope": "bay",
+    "head": "available({r},{b})",
+    "body": [
+      "bay({b})",
+      "operational({b})",
+      "sensor_free({b})",
+      "booking_clear({r},{b})"
+    ],
+    "meaning": "Known free and no interval conflict"
+  },
+  {
+    "id": "H15",
+    "scope": "request",
+    "head": "admissible({r})",
+    "body": [
+      "authorized({r})",
+      "schedulable({r})"
+    ],
+    "meaning": "Account and schedule accepted"
+  },
+  {
+    "id": "H16",
+    "scope": "bay",
+    "head": "candidate({r},{b})",
+    "body": [
+      "admissible({r})",
+      "compatible({r},{b})",
+      "available({r},{b})",
+      "commercial_fit({r},{b})"
+    ],
+    "meaning": "Eligible booking option"
+  },
+  {
+    "id": "H17",
+    "scope": "bay",
+    "head": "blocked({r},{b})",
+    "body": [
+      "booking_conflict({r},{b})"
+    ],
+    "meaning": "Overlapping reservation blocks bay"
+  },
+  {
+    "id": "H18",
+    "scope": "bay",
+    "head": "blocked({r},{b})",
+    "body": [
+      "request({r})",
+      "closed({b})"
+    ],
+    "meaning": "Maintenance closure blocks bay"
+  },
+  {
+    "id": "H19",
+    "scope": "bay",
+    "head": "blocked({r},{b})",
+    "body": [
+      "request({r})",
+      "sensor_occupied({b})"
+    ],
+    "meaning": "Occupied sensor reading blocks bay"
+  },
+  {
+    "id": "H20",
+    "scope": "bay",
+    "head": "manual_review({r},{b})",
+    "body": [
+      "request({r})",
+      "sensor_unknown({b})"
+    ],
+    "meaning": "Uncertain occupancy needs review"
+  },
+  {
+    "id": "H21",
+    "scope": "bay",
+    "head": "blocked({r},{b})",
+    "body": [
+      "charge({r})",
+      "charger_fault({b})"
+    ],
+    "meaning": "Charging hardware fault blocks charging request"
+  },
+  {
+    "id": "H22",
+    "scope": "bay",
+    "head": "blocked({r},{b})",
+    "body": [
+      "dimension_exceeded({r},{b})"
+    ],
+    "meaning": "Vehicle clearance exceeded"
+  },
+  {
+    "id": "H23",
+    "scope": "bay",
+    "head": "unaffordable({r},{b})",
+    "body": [
+      "over_budget({r},{b})"
+    ],
+    "meaning": "Estimated price exceeds request budget"
+  },
+  {
+    "id": "H24",
+    "scope": "bay",
+    "head": "duration_rejected({r},{b})",
+    "body": [
+      "over_duration({r},{b})"
+    ],
+    "meaning": "Stay exceeds bay maximum"
+  },
+  {
+    "id": "H25",
+    "scope": "request",
+    "head": "identity_rejected({r})",
+    "body": [
+      "unverified({r})"
+    ],
+    "meaning": "Unverified request cannot be admitted"
+  },
+  {
+    "id": "H26",
+    "scope": "request",
+    "head": "schedule_rejected({r})",
+    "body": [
+      "outside_hours({r})"
+    ],
+    "meaning": "Request outside operating hours"
+  },
+  {
+    "id": "H27",
+    "scope": "bay",
+    "head": "access_rejected({r},{b})",
+    "body": [
+      "no_badge({r})",
+      "accessible({b})"
+    ],
+    "meaning": "Accessible bay needs badge"
+  },
+  {
+    "id": "H28",
+    "scope": "bay",
+    "head": "service_rejected({r},{b})",
+    "body": [
+      "charge({r})",
+      "noncharging({b})"
+    ],
+    "meaning": "Requested charging service absent"
+  },
+  {
+    "id": "H29",
+    "scope": "booking",
+    "head": "reservation_pending({q})",
+    "body": [
+      "booking_future({q})"
+    ],
+    "meaning": "Confirmed booking has not started"
+  },
+  {
+    "id": "H30",
+    "scope": "booking",
+    "head": "reservation_active({q})",
+    "body": [
+      "booking_current({q})"
+    ],
+    "meaning": "Clock lies inside booking interval"
+  },
+  {
+    "id": "H31",
+    "scope": "booking",
+    "head": "reservation_completed({q})",
+    "body": [
+      "booking_past({q})"
+    ],
+    "meaning": "Booking interval has ended"
+  },
+  {
+    "id": "H32",
+    "scope": "bay",
+    "head": "accessible_option({r},{b})",
+    "body": [
+      "candidate({r},{b})",
+      "accessible({b})",
+      "badge({r})"
+    ],
+    "meaning": "Eligible accessible option"
+  },
+  {
+    "id": "H33",
+    "scope": "bay",
+    "head": "charging_option({r},{b})",
+    "body": [
+      "candidate({r},{b})",
+      "charging({b})"
+    ],
+    "meaning": "Eligible charging option"
+  },
+  {
+    "id": "H34",
+    "scope": "request",
+    "head": "identity_rejected({r})",
+    "body": [
+      "account_disabled({r})"
+    ],
+    "meaning": "Disabled account cannot be admitted"
+  }
+]

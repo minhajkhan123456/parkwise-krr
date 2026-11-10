@@ -1,0 +1,135 @@
+{
+  "Facility": {
+    "slots": {
+      "name": "ParkWise Demo",
+      "opens": 360,
+      "closes": 1320
+    },
+    "facets": {
+      "opens": "integer minutes",
+      "closes": "integer > opens"
+    }
+  },
+  "Bay": {
+    "slots": {
+      "id": null,
+      "kind": "general",
+      "distance": 0,
+      "open": true,
+      "zone": "Ground",
+      "rate": 100,
+      "max_height": 2.1,
+      "max_width": 2.2,
+      "max_minutes": 480,
+      "sensor": "free",
+      "charger": "none"
+    },
+    "facets": {
+      "id": "unique string",
+      "distance": "nonnegative metres",
+      "open": "boolean",
+      "sensor": "free | occupied | unknown",
+      "rate": "integer PKR per hour",
+      "max_height": "positive metres",
+      "max_minutes": "positive integer"
+    }
+  },
+  "GeneralBay": {
+    "parent": "Bay",
+    "slots": {
+      "kind": "general"
+    }
+  },
+  "AccessibleBay": {
+    "parent": "Bay",
+    "slots": {
+      "kind": "accessible"
+    }
+  },
+  "ChargingBay": {
+    "parent": "Bay",
+    "slots": {
+      "kind": "charging"
+    }
+  },
+  "MotorcycleBay": {
+    "parent": "Bay",
+    "slots": {
+      "kind": "motorcycle"
+    }
+  },
+  "Request": {
+    "slots": {
+      "id": null,
+      "vehicle": "car",
+      "start": 540,
+      "end": 600,
+      "verified": false,
+      "badge": false,
+      "charge": false,
+      "enabled": true,
+      "height": 1.8,
+      "width": 1.8,
+      "budget": 500
+    },
+    "facets": {
+      "id": "unique alphanumeric per active booking",
+      "start": "0 <= start < end <= 1440",
+      "charge": "requires vehicle=ev",
+      "budget": "nonnegative integer PKR",
+      "height": "positive metres",
+      "width": "positive metres"
+    }
+  },
+  "Booking": {
+    "parent": "Request",
+    "slots": {
+      "bay": null
+    },
+    "facets": {
+      "bay": "reference to existing Bay"
+    }
+  },
+  "Vehicle": {
+    "slots": {
+      "type": "car"
+    }
+  },
+  "ElectricVehicle": {
+    "parent": "Vehicle",
+    "slots": {
+      "type": "ev"
+    }
+  },
+  "Motorcycle": {
+    "parent": "Vehicle",
+    "slots": {
+      "type": "motorcycle"
+    }
+  },
+  "Zone": {
+    "slots": {
+      "name": null,
+      "level": 0
+    },
+    "facets": {
+      "name": "unique name"
+    }
+  },
+  "Sensor": {
+    "slots": {
+      "reading": "unknown"
+    },
+    "facets": {
+      "reading": "free | occupied | unknown"
+    }
+  },
+  "Charger": {
+    "slots": {
+      "status": "fault"
+    },
+    "facets": {
+      "status": "ready | fault"
+    }
+  }
+}
