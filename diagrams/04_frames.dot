@@ -1,0 +1,7 @@
+digraph G { graph [rankdir=TB,bgcolor="transparent",pad=.2,nodesep=.28,ranksep=.5]; node [shape=box,style="rounded,filled",fillcolor="#eaf5f2",color="#61a99c",fontname="DejaVu Sans",fontsize=10,margin=".14,.1"]; edge [color="#567181",fontname="DejaVu Sans",fontsize=8,arrowsize=.65];
+bay [label="Bay\nopen=true, rate=100"];g [label="GeneralBay"];a [label="AccessibleBay"];e [label="ChargingBay"];m [label="MotorcycleBay"];
+bay -> g [label="parent of"];bay -> a;bay -> e;bay -> m;
+req [label="Request\nverified=false, budget=500"];book [label="Booking\nadds bay reference"];veh [label="Vehicle"];ev [label="ElectricVehicle"];bike [label="Motorcycle"];
+g -> req [style=invis];m -> veh [style=invis];req -> book [label="parent of"];veh -> ev [label="parent of"];veh -> bike;
+
+}

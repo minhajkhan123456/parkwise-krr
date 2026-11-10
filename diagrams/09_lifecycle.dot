@@ -1,0 +1,6 @@
+digraph G { graph [rankdir=TB,bgcolor="transparent",pad=.2,nodesep=.28,ranksep=.5]; node [shape=box,style="rounded,filled",fillcolor="#eaf5f2",color="#61a99c",fontname="DejaVu Sans",fontsize=10,margin=".14,.1"]; edge [color="#567181",fontname="DejaVu Sans",fontsize=8,arrowsize=.65];
+draft [label="Unconfirmed request",shape=oval];pending [label="Pending reservation
+clock < start"];active [label="Active interval
+start <= clock < end"];done [label="Completed interval
+clock >= end"];cancelled [label="Cancelled / removed",shape=oval,fillcolor="#fbe7e4"];draft -> pending [label="confirm future interval"];draft -> active [label="confirm current interval"];pending -> active [label="clock reaches start"];active -> done [label="clock reaches end"];pending -> cancelled [label="cancel"];active -> cancelled [label="cancel"];done -> cancelled [label="clear record"];pending -> pending [label="atomic move changes bay"];active -> active [label="atomic move changes bay"];
+}

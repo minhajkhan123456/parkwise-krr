@@ -1,0 +1,45 @@
+CT-351 ASSIGNMENT AND TEMPLATE AUDIT - PARKWISE v2.1
+
+1. Introduction: COMPLETE. Problem, background, objectives and distinct scope.
+2. Domain Analysis: COMPLETE. Actors, 16 requirements, 10 bays, relationships.
+3.1 Frames: COMPLETE. Slot/facet tables, hierarchy, actual inheritance resolver.
+3.2 Semantic Networks: COMPLETE. Labelled conceptual relationship diagram.
+4.1 FOL: COMPLETE. Predicate vocabulary, explicit quantifiers, constraints and checks.
+4.2 DL: COMPLETE for the supplied template's representation requirement.
+    TBox/ABox, subsumption, membership, restrictions and disjointness included.
+    Executable classifier is limited; a full OWL reasoner is not claimed.
+5. Horn KB: COMPLETE. All 34 schemas and all default base facts in report.
+    Full 238-rule default grounding supplied as horn_kb.txt.
+6.1 Forward Chaining: COMPLETE. Actual rule firings, dependency diagram and output.
+6.2 Backward Chaining: COMPLETE. Success/failure proof trees and explanations.
+7. Implementation: COMPLETE. Full core code appendix and runnable source package.
+    Standalone HTML simulation, 16 presets, guided demo, map, timeline and controls.
+8. Results and Discussion: COMPLETE. Actual expected-output tests and limitations.
+9. Conclusion: COMPLETE. Achievements and prioritized future work.
+10. References: COMPLETE. Consistent numbered references and design provenance.
+11. Team Participation: PENDING GROUP DETAILS AND ACTUAL CONTRIBUTIONS.
+Cover identity fields: PENDING names, roll numbers, section, instructor and date.
+
+VERIFICATION
+44 Python unit tests passed.
+616 Python/JavaScript snapshots matched.
+49 DOM integration assertions passed.
+HTTP smoke checks passed.
+48 PDF pages; 14 diagrams; 21 tables; table-of-contents targets checked.
+Browser visual layout and native evidence download: LOCAL CHECK STILL RECOMMENDED.
+The build environment's browser restriction prevented a rendered-browser test.
+
+TEACHER ASSIGNMENT BRIEF CHECK
+Official blank grading rubric: included, PDF pages 2-3.
+Requirement-to-evidence map: page 41.
+Frames and scripts: existing frame architecture plus formal script on page 42.
+Traditional database limits and propositional/FOL trade-offs: page 43.
+Complete backward expansion: page 44; forward chaining: Section 6.
+Parking is proposed as an equivalent complex domain permitted by the brief;
+no separate approval or grade is claimed. Team details remain to be completed.
+
+USER-REQUESTED ANIMATED VIDEO
+142-second 720p MP4 with captions and original synthesized background audio.
+Scenario decisions are computed and asserted using the actual Python engine.
+Animated vehicle motion illustrates decisions; it is not a live browser capture.
+All generation code and subtitle text are included and use free local tools.

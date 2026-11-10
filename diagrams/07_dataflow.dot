@@ -1,0 +1,4 @@
+digraph G { graph [rankdir=TB,bgcolor="transparent",pad=.2,nodesep=.28,ranksep=.5]; node [shape=box,style="rounded,filled",fillcolor="#eaf5f2",color="#61a99c",fontname="DejaVu Sans",fontsize=10,margin=".14,.1"]; edge [color="#567181",fontname="DejaVu Sans",fontsize=8,arrowsize=.65];
+input [label="Input request + facility snapshot"];validate [label="Validate types, IDs and invariants"];facts [label="Compute explicit base facts
+clearance / cost / occupancy"];ground [label="Instantiate policy schemas"];reason [label="Run both inference engines"];rank [label="Rank proved candidates"];result [label="Decision + alternatives + proofs"];input -> validate;validate -> facts;facts -> ground;ground -> reason;reason -> rank;rank -> result;
+}

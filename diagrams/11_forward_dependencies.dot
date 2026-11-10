@@ -1,0 +1,11 @@
+digraph G { graph [rankdir=TB,bgcolor="transparent",pad=.2,nodesep=.28,ranksep=.5]; node [shape=box,style="rounded,filled",fillcolor="#eaf5f2",color="#61a99c",fontname="DejaVu Sans",fontsize=10,margin=".14,.1"]; edge [color="#567181",fontname="DejaVu Sans",fontsize=8,arrowsize=.65];
+candidate [label="candidate(R1,G1)
+H16",fillcolor="#ccebdd"];ad [label="admissible(R1)
+H15"];co [label="compatible(R1,G1)
+H13"];av [label="available(R1,G1)
+H14"];cm [label="commercial_fit(R1,G1)
+H12"];au [label="authorized + schedulable
+H01 / H02"];fit [label="size + access + service + dimensions
+H03,H05,H07,H09,H11"];free [label="bay + operational
+sensor_free + booking_clear"];cost [label="budget_ok + duration_ok"];au -> ad;fit -> co;free -> av;cost -> cm;ad -> candidate;co -> candidate;av -> candidate;cm -> candidate;
+}

@@ -1,0 +1,8 @@
+digraph G { graph [rankdir=TB,bgcolor="transparent",pad=.2,nodesep=.28,ranksep=.5]; node [shape=box,style="rounded,filled",fillcolor="#eaf5f2",color="#61a99c",fontname="DejaVu Sans",fontsize=10,margin=".14,.1"]; edge [color="#567181",fontname="DejaVu Sans",fontsize=8,arrowsize=.65];
+user [label="Operator
+request + selected action"];sim [label="ParkWise simulator
+policy + reasoning + booking state",fillcolor="#ccebdd"];ui [label="Decision output
+recommended bay + alternatives"];evidence [label="Evidence export
+JSON snapshot + proofs"];sensor [label="Synthetic facility state
+sensors / chargers / maintenance"];user -> sim;sensor -> sim;sim -> ui;sim -> evidence;
+}

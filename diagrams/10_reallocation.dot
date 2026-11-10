@@ -1,0 +1,4 @@
+digraph G { graph [rankdir=TB,bgcolor="transparent",pad=.2,nodesep=.28,ranksep=.5]; node [shape=box,style="rounded,filled",fillcolor="#eaf5f2",color="#61a99c",fontname="DejaVu Sans",fontsize=10,margin=".14,.1"]; edge [color="#567181",fontname="DejaVu Sans",fontsize=8,arrowsize=.65];
+original [label="1. Original booking remains in live state",fillcolor="#dbeafa"];copy [label="2. Create trial copy; remove original only in trial"];eval [label="3. Evaluate original request against trial"];find [label="4. Alternative bay exists?",shape=diamond];retain [label="5a. Reject move
+original unchanged",fillcolor="#fbe7e4"];replace [label="5b. Replace original in one live-state update",fillcolor="#d9f3e5"];result [label="6. Log old bay -> new bay"];original -> copy;copy -> eval;eval -> find;find -> retain [label="no"];find -> replace [label="yes"];replace -> result;
+}

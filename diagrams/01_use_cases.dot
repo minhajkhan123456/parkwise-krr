@@ -1,0 +1,5 @@
+digraph G { graph [rankdir=TB,bgcolor="transparent",pad=.2,nodesep=.28,ranksep=.5]; node [shape=box,style="rounded,filled",fillcolor="#eaf5f2",color="#61a99c",fontname="DejaVu Sans",fontsize=10,margin=".14,.1"]; edge [color="#567181",fontname="DejaVu Sans",fontsize=8,arrowsize=.65];
+driver [label="Driver / request operator",fillcolor="#dbeafa"]; admin [label="Facility operator",fillcolor="#dbeafa"]; examiner [label="Examiner",fillcolor="#dbeafa"];
+request [label="Submit request",shape=ellipse]; options [label="Inspect eligible options",shape=ellipse]; confirm [label="Confirm reservation",shape=ellipse]; cancel [label="Cancel booking",shape=ellipse]; move [label="Move reservation safely",shape=ellipse]; status [label="Change sensor / closure",shape=ellipse]; clock [label="Advance simulation clock",shape=ellipse]; proof [label="Inspect facts and proofs",shape=ellipse]; export [label="Export evidence",shape=ellipse];
+driver -> request;driver -> options;driver -> confirm;driver -> cancel;admin -> status;admin -> move;admin -> clock;examiner -> proof;examiner -> export;options -> proof [label="explained by"];move -> options [label="rechecks"];
+}

@@ -1,0 +1,16 @@
+digraph G { graph [rankdir=TB,bgcolor="transparent",pad=.2,nodesep=.28,ranksep=.5]; node [shape=box,style="rounded,filled",fillcolor="#eaf5f2",color="#61a99c",fontname="DejaVu Sans",fontsize=10,margin=".14,.1"]; edge [color="#567181",fontname="DejaVu Sans",fontsize=8,arrowsize=.65];
+c [label="Goal: candidate(R1,G1)
+PROVED by H16",fillcolor="#ccebdd"];a [label="admissible(R1)
+H15"];x [label="compatible(R1,G1)
+H13"];v [label="available(R1,G1)
+H14"];m [label="commercial_fit(R1,G1)
+H12"];a1 [label="authorized
+H01"];a2 [label="schedulable
+H02"];a3 [label="verified, account_enabled
+BASE FACTS"];a4 [label="request, valid_window, inside_hours
+BASE FACTS"];x1 [label="size_fit, access_fit
+service_fit, dimension_fit"];v1 [label="bay, operational
+sensor_free, booking_clear
+BASE FACTS"];m1 [label="budget_ok, duration_ok
+BASE FACTS"];c -> a;c -> x;c -> v;c -> m;a -> a1;a -> a2;a1 -> a3;a2 -> a4;x -> x1;v -> v1;m -> m1;
+}

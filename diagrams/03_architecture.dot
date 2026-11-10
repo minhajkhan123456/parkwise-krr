@@ -1,0 +1,12 @@
+digraph G { graph [rankdir=TB,bgcolor="transparent",pad=.2,nodesep=.28,ranksep=.5]; node [shape=box,style="rounded,filled",fillcolor="#eaf5f2",color="#61a99c",fontname="DejaVu Sans",fontsize=10,margin=".14,.1"]; edge [color="#567181",fontname="DejaVu Sans",fontsize=8,arrowsize=.65];
+ui [label="Presentation layer
+HTML / CSS / DOM events",fillcolor="#dbeafa"];actions [label="Application actions
+confirm / cancel / reallocate / clock"];adapter [label="Fact adapter
+validation + interval / cost checks"];policy [label="policy.json
+34 shared rule schemas"];ground [label="Finite grounder
+request, bay and booking bindings"];fwd [label="Indexed forward engine
+closure + firing trace"];bwd [label="Head-indexed backward engine
+goal proof tree"];select [label="Agreement check + ranking
+distance, cost, bay ID"];state [label="Session state
+requests / bays / bookings",shape=cylinder];ui -> actions;actions -> adapter;actions -> state [label="atomic mutations"];state -> adapter;policy -> ground;adapter -> ground;ground -> fwd;ground -> bwd;fwd -> select;bwd -> select;select -> ui [label="explanations",constraint=false];
+}
