@@ -1,0 +1,5011 @@
+{
+  "candidates": [
+    "G1",
+    "G2"
+  ],
+  "recommended": "G1",
+  "facts": [
+    "accessible(A1)",
+    "accessible(A2)",
+    "account_enabled(R1)",
+    "bay(A1)",
+    "bay(A2)",
+    "bay(E1)",
+    "bay(E2)",
+    "bay(G1)",
+    "bay(G2)",
+    "bay(G3)",
+    "bay(G4)",
+    "bay(G5)",
+    "bay(M1)",
+    "booking_clear(R1,A1)",
+    "booking_clear(R1,A2)",
+    "booking_clear(R1,E1)",
+    "booking_clear(R1,E2)",
+    "booking_clear(R1,G1)",
+    "booking_clear(R1,G2)",
+    "booking_clear(R1,G3)",
+    "booking_clear(R1,G4)",
+    "booking_clear(R1,G5)",
+    "booking_clear(R1,M1)",
+    "budget_ok(R1,A1)",
+    "budget_ok(R1,A2)",
+    "budget_ok(R1,E1)",
+    "budget_ok(R1,E2)",
+    "budget_ok(R1,G1)",
+    "budget_ok(R1,G2)",
+    "budget_ok(R1,G3)",
+    "budget_ok(R1,G4)",
+    "budget_ok(R1,G5)",
+    "budget_ok(R1,M1)",
+    "car(R1)",
+    "car_space(A1)",
+    "car_space(A2)",
+    "car_space(E1)",
+    "car_space(E2)",
+    "car_space(G1)",
+    "car_space(G2)",
+    "car_space(G3)",
+    "car_space(G4)",
+    "car_space(G5)",
+    "charger_fault(E2)",
+    "charger_ready(E1)",
+    "charging(E1)",
+    "charging(E2)",
+    "dimension_exceeded(R1,G3)",
+    "duration_ok(R1,A1)",
+    "duration_ok(R1,A2)",
+    "duration_ok(R1,E1)",
+    "duration_ok(R1,E2)",
+    "duration_ok(R1,G1)",
+    "duration_ok(R1,G2)",
+    "duration_ok(R1,G3)",
+    "duration_ok(R1,G5)",
+    "duration_ok(R1,M1)",
+    "height_ok(R1,A1)",
+    "height_ok(R1,A2)",
+    "height_ok(R1,E1)",
+    "height_ok(R1,E2)",
+    "height_ok(R1,G1)",
+    "height_ok(R1,G2)",
+    "height_ok(R1,G4)",
+    "height_ok(R1,G5)",
+    "height_ok(R1,M1)",
+    "inside_hours(R1)",
+    "motorcycle_space(M1)",
+    "no_badge(R1)",
+    "no_charge(R1)",
+    "noncharging(A1)",
+    "noncharging(A2)",
+    "noncharging(G1)",
+    "noncharging(G2)",
+    "noncharging(G3)",
+    "noncharging(G4)",
+    "noncharging(G5)",
+    "noncharging(M1)",
+    "operational(A1)",
+    "operational(A2)",
+    "operational(E1)",
+    "operational(E2)",
+    "operational(G1)",
+    "operational(G2)",
+    "operational(G3)",
+    "operational(G4)",
+    "operational(G5)",
+    "operational(M1)",
+    "over_duration(R1,G4)",
+    "request(R1)",
+    "sensor_free(A1)",
+    "sensor_free(A2)",
+    "sensor_free(E1)",
+    "sensor_free(E2)",
+    "sensor_free(G1)",
+    "sensor_free(G2)",
+    "sensor_free(G3)",
+    "sensor_free(G4)",
+    "sensor_free(M1)",
+    "sensor_occupied(G5)",
+    "unrestricted(E1)",
+    "unrestricted(E2)",
+    "unrestricted(G1)",
+    "unrestricted(G2)",
+    "unrestricted(G3)",
+    "unrestricted(G4)",
+    "unrestricted(G5)",
+    "unrestricted(M1)",
+    "valid_window(R1)",
+    "verified(R1)",
+    "width_ok(R1,A1)",
+    "width_ok(R1,A2)",
+    "width_ok(R1,E1)",
+    "width_ok(R1,E2)",
+    "width_ok(R1,G1)",
+    "width_ok(R1,G2)",
+    "width_ok(R1,G3)",
+    "width_ok(R1,G4)",
+    "width_ok(R1,G5)",
+    "width_ok(R1,M1)"
+  ],
+  "derived": [
+    "access_fit(R1,E1)",
+    "access_fit(R1,E2)",
+    "access_fit(R1,G1)",
+    "access_fit(R1,G2)",
+    "access_fit(R1,G3)",
+    "access_fit(R1,G4)",
+    "access_fit(R1,G5)",
+    "access_fit(R1,M1)",
+    "access_rejected(R1,A1)",
+    "access_rejected(R1,A2)",
+    "admissible(R1)",
+    "authorized(R1)",
+    "available(R1,A1)",
+    "available(R1,A2)",
+    "available(R1,E1)",
+    "available(R1,E2)",
+    "available(R1,G1)",
+    "available(R1,G2)",
+    "available(R1,G3)",
+    "available(R1,G4)",
+    "available(R1,M1)",
+    "blocked(R1,G3)",
+    "blocked(R1,G5)",
+    "candidate(R1,G1)",
+    "candidate(R1,G2)",
+    "car_sized(R1)",
+    "commercial_fit(R1,A1)",
+    "commercial_fit(R1,A2)",
+    "commercial_fit(R1,E1)",
+    "commercial_fit(R1,E2)",
+    "commercial_fit(R1,G1)",
+    "commercial_fit(R1,G2)",
+    "commercial_fit(R1,G3)",
+    "commercial_fit(R1,G5)",
+    "commercial_fit(R1,M1)",
+    "compatible(R1,G1)",
+    "compatible(R1,G2)",
+    "compatible(R1,G4)",
+    "compatible(R1,G5)",
+    "dimension_fit(R1,A1)",
+    "dimension_fit(R1,A2)",
+    "dimension_fit(R1,E1)",
+    "dimension_fit(R1,E2)",
+    "dimension_fit(R1,G1)",
+    "dimension_fit(R1,G2)",
+    "dimension_fit(R1,G4)",
+    "dimension_fit(R1,G5)",
+    "dimension_fit(R1,M1)",
+    "duration_rejected(R1,G4)",
+    "schedulable(R1)",
+    "service_fit(R1,A1)",
+    "service_fit(R1,A2)",
+    "service_fit(R1,G1)",
+    "service_fit(R1,G2)",
+    "service_fit(R1,G3)",
+    "service_fit(R1,G4)",
+    "service_fit(R1,G5)",
+    "service_fit(R1,M1)",
+    "size_fit(R1,A1)",
+    "size_fit(R1,A2)",
+    "size_fit(R1,E1)",
+    "size_fit(R1,E2)",
+    "size_fit(R1,G1)",
+    "size_fit(R1,G2)",
+    "size_fit(R1,G3)",
+    "size_fit(R1,G4)",
+    "size_fit(R1,G5)"
+  ],
+  "trace": [
+    {
+      "rule": "H03",
+      "fact": "car_sized(R1)",
+      "because": [
+        "car(R1)"
+      ]
+    },
+    {
+      "rule": "H22",
+      "fact": "blocked(R1,G3)",
+      "because": [
+        "dimension_exceeded(R1,G3)"
+      ]
+    },
+    {
+      "rule": "H12",
+      "fact": "commercial_fit(R1,A1)",
+      "because": [
+        "budget_ok(R1,A1)",
+        "duration_ok(R1,A1)"
+      ]
+    },
+    {
+      "rule": "H12",
+      "fact": "commercial_fit(R1,A2)",
+      "because": [
+        "budget_ok(R1,A2)",
+        "duration_ok(R1,A2)"
+      ]
+    },
+    {
+      "rule": "H12",
+      "fact": "commercial_fit(R1,E1)",
+      "because": [
+        "budget_ok(R1,E1)",
+        "duration_ok(R1,E1)"
+      ]
+    },
+    {
+      "rule": "H12",
+      "fact": "commercial_fit(R1,E2)",
+      "because": [
+        "budget_ok(R1,E2)",
+        "duration_ok(R1,E2)"
+      ]
+    },
+    {
+      "rule": "H12",
+      "fact": "commercial_fit(R1,G1)",
+      "because": [
+        "budget_ok(R1,G1)",
+        "duration_ok(R1,G1)"
+      ]
+    },
+    {
+      "rule": "H12",
+      "fact": "commercial_fit(R1,G2)",
+      "because": [
+        "budget_ok(R1,G2)",
+        "duration_ok(R1,G2)"
+      ]
+    },
+    {
+      "rule": "H12",
+      "fact": "commercial_fit(R1,G3)",
+      "because": [
+        "budget_ok(R1,G3)",
+        "duration_ok(R1,G3)"
+      ]
+    },
+    {
+      "rule": "H12",
+      "fact": "commercial_fit(R1,G5)",
+      "because": [
+        "budget_ok(R1,G5)",
+        "duration_ok(R1,G5)"
+      ]
+    },
+    {
+      "rule": "H12",
+      "fact": "commercial_fit(R1,M1)",
+      "because": [
+        "budget_ok(R1,M1)",
+        "duration_ok(R1,M1)"
+      ]
+    },
+    {
+      "rule": "H27",
+      "fact": "access_rejected(R1,A1)",
+      "because": [
+        "no_badge(R1)",
+        "accessible(A1)"
+      ]
+    },
+    {
+      "rule": "H27",
+      "fact": "access_rejected(R1,A2)",
+      "because": [
+        "no_badge(R1)",
+        "accessible(A2)"
+      ]
+    },
+    {
+      "rule": "H09",
+      "fact": "service_fit(R1,A1)",
+      "because": [
+        "no_charge(R1)",
+        "noncharging(A1)"
+      ]
+    },
+    {
+      "rule": "H09",
+      "fact": "service_fit(R1,A2)",
+      "because": [
+        "no_charge(R1)",
+        "noncharging(A2)"
+      ]
+    },
+    {
+      "rule": "H09",
+      "fact": "service_fit(R1,G1)",
+      "because": [
+        "no_charge(R1)",
+        "noncharging(G1)"
+      ]
+    },
+    {
+      "rule": "H09",
+      "fact": "service_fit(R1,G2)",
+      "because": [
+        "no_charge(R1)",
+        "noncharging(G2)"
+      ]
+    },
+    {
+      "rule": "H09",
+      "fact": "service_fit(R1,G3)",
+      "because": [
+        "no_charge(R1)",
+        "noncharging(G3)"
+      ]
+    },
+    {
+      "rule": "H09",
+      "fact": "service_fit(R1,G4)",
+      "because": [
+        "no_charge(R1)",
+        "noncharging(G4)"
+      ]
+    },
+    {
+      "rule": "H09",
+      "fact": "service_fit(R1,G5)",
+      "because": [
+        "no_charge(R1)",
+        "noncharging(G5)"
+      ]
+    },
+    {
+      "rule": "H09",
+      "fact": "service_fit(R1,M1)",
+      "because": [
+        "no_charge(R1)",
+        "noncharging(M1)"
+      ]
+    },
+    {
+      "rule": "H24",
+      "fact": "duration_rejected(R1,G4)",
+      "because": [
+        "over_duration(R1,G4)"
+      ]
+    },
+    {
+      "rule": "H14",
+      "fact": "available(R1,A1)",
+      "because": [
+        "bay(A1)",
+        "operational(A1)",
+        "sensor_free(A1)",
+        "booking_clear(R1,A1)"
+      ]
+    },
+    {
+      "rule": "H14",
+      "fact": "available(R1,A2)",
+      "because": [
+        "bay(A2)",
+        "operational(A2)",
+        "sensor_free(A2)",
+        "booking_clear(R1,A2)"
+      ]
+    },
+    {
+      "rule": "H14",
+      "fact": "available(R1,E1)",
+      "because": [
+        "bay(E1)",
+        "operational(E1)",
+        "sensor_free(E1)",
+        "booking_clear(R1,E1)"
+      ]
+    },
+    {
+      "rule": "H14",
+      "fact": "available(R1,E2)",
+      "because": [
+        "bay(E2)",
+        "operational(E2)",
+        "sensor_free(E2)",
+        "booking_clear(R1,E2)"
+      ]
+    },
+    {
+      "rule": "H14",
+      "fact": "available(R1,G1)",
+      "because": [
+        "bay(G1)",
+        "operational(G1)",
+        "sensor_free(G1)",
+        "booking_clear(R1,G1)"
+      ]
+    },
+    {
+      "rule": "H14",
+      "fact": "available(R1,G2)",
+      "because": [
+        "bay(G2)",
+        "operational(G2)",
+        "sensor_free(G2)",
+        "booking_clear(R1,G2)"
+      ]
+    },
+    {
+      "rule": "H14",
+      "fact": "available(R1,G3)",
+      "because": [
+        "bay(G3)",
+        "operational(G3)",
+        "sensor_free(G3)",
+        "booking_clear(R1,G3)"
+      ]
+    },
+    {
+      "rule": "H14",
+      "fact": "available(R1,G4)",
+      "because": [
+        "bay(G4)",
+        "operational(G4)",
+        "sensor_free(G4)",
+        "booking_clear(R1,G4)"
+      ]
+    },
+    {
+      "rule": "H14",
+      "fact": "available(R1,M1)",
+      "because": [
+        "bay(M1)",
+        "operational(M1)",
+        "sensor_free(M1)",
+        "booking_clear(R1,M1)"
+      ]
+    },
+    {
+      "rule": "H19",
+      "fact": "blocked(R1,G5)",
+      "because": [
+        "request(R1)",
+        "sensor_occupied(G5)"
+      ]
+    },
+    {
+      "rule": "H07",
+      "fact": "access_fit(R1,E1)",
+      "because": [
+        "request(R1)",
+        "unrestricted(E1)"
+      ]
+    },
+    {
+      "rule": "H07",
+      "fact": "access_fit(R1,E2)",
+      "because": [
+        "request(R1)",
+        "unrestricted(E2)"
+      ]
+    },
+    {
+      "rule": "H07",
+      "fact": "access_fit(R1,G1)",
+      "because": [
+        "request(R1)",
+        "unrestricted(G1)"
+      ]
+    },
+    {
+      "rule": "H07",
+      "fact": "access_fit(R1,G2)",
+      "because": [
+        "request(R1)",
+        "unrestricted(G2)"
+      ]
+    },
+    {
+      "rule": "H07",
+      "fact": "access_fit(R1,G3)",
+      "because": [
+        "request(R1)",
+        "unrestricted(G3)"
+      ]
+    },
+    {
+      "rule": "H07",
+      "fact": "access_fit(R1,G4)",
+      "because": [
+        "request(R1)",
+        "unrestricted(G4)"
+      ]
+    },
+    {
+      "rule": "H07",
+      "fact": "access_fit(R1,G5)",
+      "because": [
+        "request(R1)",
+        "unrestricted(G5)"
+      ]
+    },
+    {
+      "rule": "H07",
+      "fact": "access_fit(R1,M1)",
+      "because": [
+        "request(R1)",
+        "unrestricted(M1)"
+      ]
+    },
+    {
+      "rule": "H02",
+      "fact": "schedulable(R1)",
+      "because": [
+        "request(R1)",
+        "valid_window(R1)",
+        "inside_hours(R1)"
+      ]
+    },
+    {
+      "rule": "H01",
+      "fact": "authorized(R1)",
+      "because": [
+        "verified(R1)",
+        "account_enabled(R1)"
+      ]
+    },
+    {
+      "rule": "H11",
+      "fact": "dimension_fit(R1,A1)",
+      "because": [
+        "height_ok(R1,A1)",
+        "width_ok(R1,A1)"
+      ]
+    },
+    {
+      "rule": "H11",
+      "fact": "dimension_fit(R1,A2)",
+      "because": [
+        "height_ok(R1,A2)",
+        "width_ok(R1,A2)"
+      ]
+    },
+    {
+      "rule": "H11",
+      "fact": "dimension_fit(R1,E1)",
+      "because": [
+        "height_ok(R1,E1)",
+        "width_ok(R1,E1)"
+      ]
+    },
+    {
+      "rule": "H11",
+      "fact": "dimension_fit(R1,E2)",
+      "because": [
+        "height_ok(R1,E2)",
+        "width_ok(R1,E2)"
+      ]
+    },
+    {
+      "rule": "H11",
+      "fact": "dimension_fit(R1,G1)",
+      "because": [
+        "height_ok(R1,G1)",
+        "width_ok(R1,G1)"
+      ]
+    },
+    {
+      "rule": "H11",
+      "fact": "dimension_fit(R1,G2)",
+      "because": [
+        "height_ok(R1,G2)",
+        "width_ok(R1,G2)"
+      ]
+    },
+    {
+      "rule": "H11",
+      "fact": "dimension_fit(R1,G4)",
+      "because": [
+        "height_ok(R1,G4)",
+        "width_ok(R1,G4)"
+      ]
+    },
+    {
+      "rule": "H11",
+      "fact": "dimension_fit(R1,G5)",
+      "because": [
+        "height_ok(R1,G5)",
+        "width_ok(R1,G5)"
+      ]
+    },
+    {
+      "rule": "H11",
+      "fact": "dimension_fit(R1,M1)",
+      "because": [
+        "height_ok(R1,M1)",
+        "width_ok(R1,M1)"
+      ]
+    },
+    {
+      "rule": "H05",
+      "fact": "size_fit(R1,G1)",
+      "because": [
+        "car_sized(R1)",
+        "car_space(G1)"
+      ]
+    },
+    {
+      "rule": "H05",
+      "fact": "size_fit(R1,G2)",
+      "because": [
+        "car_sized(R1)",
+        "car_space(G2)"
+      ]
+    },
+    {
+      "rule": "H05",
+      "fact": "size_fit(R1,A1)",
+      "because": [
+        "car_sized(R1)",
+        "car_space(A1)"
+      ]
+    },
+    {
+      "rule": "H05",
+      "fact": "size_fit(R1,E1)",
+      "because": [
+        "car_sized(R1)",
+        "car_space(E1)"
+      ]
+    },
+    {
+      "rule": "H05",
+      "fact": "size_fit(R1,G3)",
+      "because": [
+        "car_sized(R1)",
+        "car_space(G3)"
+      ]
+    },
+    {
+      "rule": "H05",
+      "fact": "size_fit(R1,G4)",
+      "because": [
+        "car_sized(R1)",
+        "car_space(G4)"
+      ]
+    },
+    {
+      "rule": "H05",
+      "fact": "size_fit(R1,E2)",
+      "because": [
+        "car_sized(R1)",
+        "car_space(E2)"
+      ]
+    },
+    {
+      "rule": "H05",
+      "fact": "size_fit(R1,A2)",
+      "because": [
+        "car_sized(R1)",
+        "car_space(A2)"
+      ]
+    },
+    {
+      "rule": "H05",
+      "fact": "size_fit(R1,G5)",
+      "because": [
+        "car_sized(R1)",
+        "car_space(G5)"
+      ]
+    },
+    {
+      "rule": "H15",
+      "fact": "admissible(R1)",
+      "because": [
+        "authorized(R1)",
+        "schedulable(R1)"
+      ]
+    },
+    {
+      "rule": "H13",
+      "fact": "compatible(R1,G1)",
+      "because": [
+        "size_fit(R1,G1)",
+        "access_fit(R1,G1)",
+        "service_fit(R1,G1)",
+        "dimension_fit(R1,G1)"
+      ]
+    },
+    {
+      "rule": "H13",
+      "fact": "compatible(R1,G2)",
+      "because": [
+        "size_fit(R1,G2)",
+        "access_fit(R1,G2)",
+        "service_fit(R1,G2)",
+        "dimension_fit(R1,G2)"
+      ]
+    },
+    {
+      "rule": "H13",
+      "fact": "compatible(R1,G4)",
+      "because": [
+        "size_fit(R1,G4)",
+        "access_fit(R1,G4)",
+        "service_fit(R1,G4)",
+        "dimension_fit(R1,G4)"
+      ]
+    },
+    {
+      "rule": "H13",
+      "fact": "compatible(R1,G5)",
+      "because": [
+        "size_fit(R1,G5)",
+        "access_fit(R1,G5)",
+        "service_fit(R1,G5)",
+        "dimension_fit(R1,G5)"
+      ]
+    },
+    {
+      "rule": "H16",
+      "fact": "candidate(R1,G1)",
+      "because": [
+        "admissible(R1)",
+        "compatible(R1,G1)",
+        "available(R1,G1)",
+        "commercial_fit(R1,G1)"
+      ]
+    },
+    {
+      "rule": "H16",
+      "fact": "candidate(R1,G2)",
+      "because": [
+        "admissible(R1)",
+        "compatible(R1,G2)",
+        "available(R1,G2)",
+        "commercial_fit(R1,G2)"
+      ]
+    }
+  ],
+  "proofs": {
+    "G1": {
+      "goal": "candidate(R1,G1)",
+      "proved": true,
+      "source": "H16",
+      "children": [
+        {
+          "goal": "admissible(R1)",
+          "proved": true,
+          "source": "H15",
+          "children": [
+            {
+              "goal": "authorized(R1)",
+              "proved": true,
+              "source": "H01",
+              "children": [
+                {
+                  "goal": "verified(R1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "account_enabled(R1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "goal": "schedulable(R1)",
+              "proved": true,
+              "source": "H02",
+              "children": [
+                {
+                  "goal": "request(R1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "valid_window(R1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "inside_hours(R1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal": "compatible(R1,G1)",
+          "proved": true,
+          "source": "H13",
+          "children": [
+            {
+              "goal": "size_fit(R1,G1)",
+              "proved": true,
+              "source": "H05",
+              "children": [
+                {
+                  "goal": "car_sized(R1)",
+                  "proved": true,
+                  "source": "H03",
+                  "children": [
+                    {
+                      "goal": "car(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "goal": "car_space(G1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "goal": "access_fit(R1,G1)",
+              "proved": true,
+              "source": "H07",
+              "children": [
+                {
+                  "goal": "request(R1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "unrestricted(G1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "goal": "service_fit(R1,G1)",
+              "proved": true,
+              "source": "H09",
+              "children": [
+                {
+                  "goal": "no_charge(R1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "noncharging(G1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "goal": "dimension_fit(R1,G1)",
+              "proved": true,
+              "source": "H11",
+              "children": [
+                {
+                  "goal": "height_ok(R1,G1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "width_ok(R1,G1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal": "available(R1,G1)",
+          "proved": true,
+          "source": "H14",
+          "children": [
+            {
+              "goal": "bay(G1)",
+              "proved": true,
+              "source": "fact",
+              "children": []
+            },
+            {
+              "goal": "operational(G1)",
+              "proved": true,
+              "source": "fact",
+              "children": []
+            },
+            {
+              "goal": "sensor_free(G1)",
+              "proved": true,
+              "source": "fact",
+              "children": []
+            },
+            {
+              "goal": "booking_clear(R1,G1)",
+              "proved": true,
+              "source": "fact",
+              "children": []
+            }
+          ]
+        },
+        {
+          "goal": "commercial_fit(R1,G1)",
+          "proved": true,
+          "source": "H12",
+          "children": [
+            {
+              "goal": "budget_ok(R1,G1)",
+              "proved": true,
+              "source": "fact",
+              "children": []
+            },
+            {
+              "goal": "duration_ok(R1,G1)",
+              "proved": true,
+              "source": "fact",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "G2": {
+      "goal": "candidate(R1,G2)",
+      "proved": true,
+      "source": "H16",
+      "children": [
+        {
+          "goal": "admissible(R1)",
+          "proved": true,
+          "source": "H15",
+          "children": [
+            {
+              "goal": "authorized(R1)",
+              "proved": true,
+              "source": "H01",
+              "children": [
+                {
+                  "goal": "verified(R1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "account_enabled(R1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "goal": "schedulable(R1)",
+              "proved": true,
+              "source": "H02",
+              "children": [
+                {
+                  "goal": "request(R1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "valid_window(R1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "inside_hours(R1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal": "compatible(R1,G2)",
+          "proved": true,
+          "source": "H13",
+          "children": [
+            {
+              "goal": "size_fit(R1,G2)",
+              "proved": true,
+              "source": "H05",
+              "children": [
+                {
+                  "goal": "car_sized(R1)",
+                  "proved": true,
+                  "source": "H03",
+                  "children": [
+                    {
+                      "goal": "car(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "goal": "car_space(G2)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "goal": "access_fit(R1,G2)",
+              "proved": true,
+              "source": "H07",
+              "children": [
+                {
+                  "goal": "request(R1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "unrestricted(G2)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "goal": "service_fit(R1,G2)",
+              "proved": true,
+              "source": "H09",
+              "children": [
+                {
+                  "goal": "no_charge(R1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "noncharging(G2)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "goal": "dimension_fit(R1,G2)",
+              "proved": true,
+              "source": "H11",
+              "children": [
+                {
+                  "goal": "height_ok(R1,G2)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "width_ok(R1,G2)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "goal": "available(R1,G2)",
+          "proved": true,
+          "source": "H14",
+          "children": [
+            {
+              "goal": "bay(G2)",
+              "proved": true,
+              "source": "fact",
+              "children": []
+            },
+            {
+              "goal": "operational(G2)",
+              "proved": true,
+              "source": "fact",
+              "children": []
+            },
+            {
+              "goal": "sensor_free(G2)",
+              "proved": true,
+              "source": "fact",
+              "children": []
+            },
+            {
+              "goal": "booking_clear(R1,G2)",
+              "proved": true,
+              "source": "fact",
+              "children": []
+            }
+          ]
+        },
+        {
+          "goal": "commercial_fit(R1,G2)",
+          "proved": true,
+          "source": "H12",
+          "children": [
+            {
+              "goal": "budget_ok(R1,G2)",
+              "proved": true,
+              "source": "fact",
+              "children": []
+            },
+            {
+              "goal": "duration_ok(R1,G2)",
+              "proved": true,
+              "source": "fact",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "A1": {
+      "goal": "candidate(R1,A1)",
+      "proved": false,
+      "source": "unproved",
+      "children": [
+        {
+          "goal": "candidate(R1,A1)",
+          "proved": false,
+          "source": "H16",
+          "children": [
+            {
+              "goal": "admissible(R1)",
+              "proved": true,
+              "source": "H15",
+              "children": [
+                {
+                  "goal": "authorized(R1)",
+                  "proved": true,
+                  "source": "H01",
+                  "children": [
+                    {
+                      "goal": "verified(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "account_enabled(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "goal": "schedulable(R1)",
+                  "proved": true,
+                  "source": "H02",
+                  "children": [
+                    {
+                      "goal": "request(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "valid_window(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "inside_hours(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "goal": "compatible(R1,A1)",
+              "proved": false,
+              "source": "unproved",
+              "children": [
+                {
+                  "goal": "compatible(R1,A1)",
+                  "proved": false,
+                  "source": "H13",
+                  "children": [
+                    {
+                      "goal": "size_fit(R1,A1)",
+                      "proved": true,
+                      "source": "H05",
+                      "children": [
+                        {
+                          "goal": "car_sized(R1)",
+                          "proved": true,
+                          "source": "H03",
+                          "children": [
+                            {
+                              "goal": "car(R1)",
+                              "proved": true,
+                              "source": "fact",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "goal": "car_space(A1)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "goal": "access_fit(R1,A1)",
+                      "proved": false,
+                      "source": "unproved",
+                      "children": [
+                        {
+                          "goal": "access_fit(R1,A1)",
+                          "proved": false,
+                          "source": "H07",
+                          "children": [
+                            {
+                              "goal": "request(R1)",
+                              "proved": true,
+                              "source": "fact",
+                              "children": []
+                            },
+                            {
+                              "goal": "unrestricted(A1)",
+                              "proved": false,
+                              "source": "unproved",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "goal": "access_fit(R1,A1)",
+                          "proved": false,
+                          "source": "H08",
+                          "children": [
+                            {
+                              "goal": "badge(R1)",
+                              "proved": false,
+                              "source": "unproved",
+                              "children": []
+                            },
+                            {
+                              "goal": "accessible(A1)",
+                              "proved": true,
+                              "source": "fact",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "goal": "service_fit(R1,A1)",
+                      "proved": true,
+                      "source": "H09",
+                      "children": [
+                        {
+                          "goal": "no_charge(R1)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        },
+                        {
+                          "goal": "noncharging(A1)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "goal": "dimension_fit(R1,A1)",
+                      "proved": true,
+                      "source": "H11",
+                      "children": [
+                        {
+                          "goal": "height_ok(R1,A1)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        },
+                        {
+                          "goal": "width_ok(R1,A1)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "goal": "available(R1,A1)",
+              "proved": true,
+              "source": "H14",
+              "children": [
+                {
+                  "goal": "bay(A1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "operational(A1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "sensor_free(A1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "booking_clear(R1,A1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "goal": "commercial_fit(R1,A1)",
+              "proved": true,
+              "source": "H12",
+              "children": [
+                {
+                  "goal": "budget_ok(R1,A1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "duration_ok(R1,A1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "E1": {
+      "goal": "candidate(R1,E1)",
+      "proved": false,
+      "source": "unproved",
+      "children": [
+        {
+          "goal": "candidate(R1,E1)",
+          "proved": false,
+          "source": "H16",
+          "children": [
+            {
+              "goal": "admissible(R1)",
+              "proved": true,
+              "source": "H15",
+              "children": [
+                {
+                  "goal": "authorized(R1)",
+                  "proved": true,
+                  "source": "H01",
+                  "children": [
+                    {
+                      "goal": "verified(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "account_enabled(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "goal": "schedulable(R1)",
+                  "proved": true,
+                  "source": "H02",
+                  "children": [
+                    {
+                      "goal": "request(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "valid_window(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "inside_hours(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "goal": "compatible(R1,E1)",
+              "proved": false,
+              "source": "unproved",
+              "children": [
+                {
+                  "goal": "compatible(R1,E1)",
+                  "proved": false,
+                  "source": "H13",
+                  "children": [
+                    {
+                      "goal": "size_fit(R1,E1)",
+                      "proved": true,
+                      "source": "H05",
+                      "children": [
+                        {
+                          "goal": "car_sized(R1)",
+                          "proved": true,
+                          "source": "H03",
+                          "children": [
+                            {
+                              "goal": "car(R1)",
+                              "proved": true,
+                              "source": "fact",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "goal": "car_space(E1)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "goal": "access_fit(R1,E1)",
+                      "proved": true,
+                      "source": "H07",
+                      "children": [
+                        {
+                          "goal": "request(R1)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        },
+                        {
+                          "goal": "unrestricted(E1)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "goal": "service_fit(R1,E1)",
+                      "proved": false,
+                      "source": "unproved",
+                      "children": [
+                        {
+                          "goal": "service_fit(R1,E1)",
+                          "proved": false,
+                          "source": "H09",
+                          "children": [
+                            {
+                              "goal": "no_charge(R1)",
+                              "proved": true,
+                              "source": "fact",
+                              "children": []
+                            },
+                            {
+                              "goal": "noncharging(E1)",
+                              "proved": false,
+                              "source": "unproved",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "goal": "service_fit(R1,E1)",
+                          "proved": false,
+                          "source": "H10",
+                          "children": [
+                            {
+                              "goal": "charge(R1)",
+                              "proved": false,
+                              "source": "unproved",
+                              "children": []
+                            },
+                            {
+                              "goal": "ev(R1)",
+                              "proved": false,
+                              "source": "unproved",
+                              "children": []
+                            },
+                            {
+                              "goal": "charging(E1)",
+                              "proved": true,
+                              "source": "fact",
+                              "children": []
+                            },
+                            {
+                              "goal": "charger_ready(E1)",
+                              "proved": true,
+                              "source": "fact",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "goal": "dimension_fit(R1,E1)",
+                      "proved": true,
+                      "source": "H11",
+                      "children": [
+                        {
+                          "goal": "height_ok(R1,E1)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        },
+                        {
+                          "goal": "width_ok(R1,E1)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "goal": "available(R1,E1)",
+              "proved": true,
+              "source": "H14",
+              "children": [
+                {
+                  "goal": "bay(E1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "operational(E1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "sensor_free(E1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "booking_clear(R1,E1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "goal": "commercial_fit(R1,E1)",
+              "proved": true,
+              "source": "H12",
+              "children": [
+                {
+                  "goal": "budget_ok(R1,E1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "duration_ok(R1,E1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "M1": {
+      "goal": "candidate(R1,M1)",
+      "proved": false,
+      "source": "unproved",
+      "children": [
+        {
+          "goal": "candidate(R1,M1)",
+          "proved": false,
+          "source": "H16",
+          "children": [
+            {
+              "goal": "admissible(R1)",
+              "proved": true,
+              "source": "H15",
+              "children": [
+                {
+                  "goal": "authorized(R1)",
+                  "proved": true,
+                  "source": "H01",
+                  "children": [
+                    {
+                      "goal": "verified(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "account_enabled(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "goal": "schedulable(R1)",
+                  "proved": true,
+                  "source": "H02",
+                  "children": [
+                    {
+                      "goal": "request(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "valid_window(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "inside_hours(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "goal": "compatible(R1,M1)",
+              "proved": false,
+              "source": "unproved",
+              "children": [
+                {
+                  "goal": "compatible(R1,M1)",
+                  "proved": false,
+                  "source": "H13",
+                  "children": [
+                    {
+                      "goal": "size_fit(R1,M1)",
+                      "proved": false,
+                      "source": "unproved",
+                      "children": [
+                        {
+                          "goal": "size_fit(R1,M1)",
+                          "proved": false,
+                          "source": "H05",
+                          "children": [
+                            {
+                              "goal": "car_sized(R1)",
+                              "proved": true,
+                              "source": "H03",
+                              "children": [
+                                {
+                                  "goal": "car(R1)",
+                                  "proved": true,
+                                  "source": "fact",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "goal": "car_space(M1)",
+                              "proved": false,
+                              "source": "unproved",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "goal": "size_fit(R1,M1)",
+                          "proved": false,
+                          "source": "H06",
+                          "children": [
+                            {
+                              "goal": "motorcycle(R1)",
+                              "proved": false,
+                              "source": "unproved",
+                              "children": []
+                            },
+                            {
+                              "goal": "motorcycle_space(M1)",
+                              "proved": true,
+                              "source": "fact",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "goal": "access_fit(R1,M1)",
+                      "proved": true,
+                      "source": "H07",
+                      "children": [
+                        {
+                          "goal": "request(R1)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        },
+                        {
+                          "goal": "unrestricted(M1)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "goal": "service_fit(R1,M1)",
+                      "proved": true,
+                      "source": "H09",
+                      "children": [
+                        {
+                          "goal": "no_charge(R1)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        },
+                        {
+                          "goal": "noncharging(M1)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "goal": "dimension_fit(R1,M1)",
+                      "proved": true,
+                      "source": "H11",
+                      "children": [
+                        {
+                          "goal": "height_ok(R1,M1)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        },
+                        {
+                          "goal": "width_ok(R1,M1)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "goal": "available(R1,M1)",
+              "proved": true,
+              "source": "H14",
+              "children": [
+                {
+                  "goal": "bay(M1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "operational(M1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "sensor_free(M1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "booking_clear(R1,M1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "goal": "commercial_fit(R1,M1)",
+              "proved": true,
+              "source": "H12",
+              "children": [
+                {
+                  "goal": "budget_ok(R1,M1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "duration_ok(R1,M1)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "G3": {
+      "goal": "candidate(R1,G3)",
+      "proved": false,
+      "source": "unproved",
+      "children": [
+        {
+          "goal": "candidate(R1,G3)",
+          "proved": false,
+          "source": "H16",
+          "children": [
+            {
+              "goal": "admissible(R1)",
+              "proved": true,
+              "source": "H15",
+              "children": [
+                {
+                  "goal": "authorized(R1)",
+                  "proved": true,
+                  "source": "H01",
+                  "children": [
+                    {
+                      "goal": "verified(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "account_enabled(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "goal": "schedulable(R1)",
+                  "proved": true,
+                  "source": "H02",
+                  "children": [
+                    {
+                      "goal": "request(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "valid_window(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "inside_hours(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "goal": "compatible(R1,G3)",
+              "proved": false,
+              "source": "unproved",
+              "children": [
+                {
+                  "goal": "compatible(R1,G3)",
+                  "proved": false,
+                  "source": "H13",
+                  "children": [
+                    {
+                      "goal": "size_fit(R1,G3)",
+                      "proved": true,
+                      "source": "H05",
+                      "children": [
+                        {
+                          "goal": "car_sized(R1)",
+                          "proved": true,
+                          "source": "H03",
+                          "children": [
+                            {
+                              "goal": "car(R1)",
+                              "proved": true,
+                              "source": "fact",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "goal": "car_space(G3)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "goal": "access_fit(R1,G3)",
+                      "proved": true,
+                      "source": "H07",
+                      "children": [
+                        {
+                          "goal": "request(R1)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        },
+                        {
+                          "goal": "unrestricted(G3)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "goal": "service_fit(R1,G3)",
+                      "proved": true,
+                      "source": "H09",
+                      "children": [
+                        {
+                          "goal": "no_charge(R1)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        },
+                        {
+                          "goal": "noncharging(G3)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "goal": "dimension_fit(R1,G3)",
+                      "proved": false,
+                      "source": "unproved",
+                      "children": [
+                        {
+                          "goal": "dimension_fit(R1,G3)",
+                          "proved": false,
+                          "source": "H11",
+                          "children": [
+                            {
+                              "goal": "height_ok(R1,G3)",
+                              "proved": false,
+                              "source": "unproved",
+                              "children": []
+                            },
+                            {
+                              "goal": "width_ok(R1,G3)",
+                              "proved": true,
+                              "source": "fact",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "goal": "available(R1,G3)",
+              "proved": true,
+              "source": "H14",
+              "children": [
+                {
+                  "goal": "bay(G3)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "operational(G3)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "sensor_free(G3)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "booking_clear(R1,G3)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "goal": "commercial_fit(R1,G3)",
+              "proved": true,
+              "source": "H12",
+              "children": [
+                {
+                  "goal": "budget_ok(R1,G3)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "duration_ok(R1,G3)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "G4": {
+      "goal": "candidate(R1,G4)",
+      "proved": false,
+      "source": "unproved",
+      "children": [
+        {
+          "goal": "candidate(R1,G4)",
+          "proved": false,
+          "source": "H16",
+          "children": [
+            {
+              "goal": "admissible(R1)",
+              "proved": true,
+              "source": "H15",
+              "children": [
+                {
+                  "goal": "authorized(R1)",
+                  "proved": true,
+                  "source": "H01",
+                  "children": [
+                    {
+                      "goal": "verified(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "account_enabled(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "goal": "schedulable(R1)",
+                  "proved": true,
+                  "source": "H02",
+                  "children": [
+                    {
+                      "goal": "request(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "valid_window(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "inside_hours(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "goal": "compatible(R1,G4)",
+              "proved": true,
+              "source": "H13",
+              "children": [
+                {
+                  "goal": "size_fit(R1,G4)",
+                  "proved": true,
+                  "source": "H05",
+                  "children": [
+                    {
+                      "goal": "car_sized(R1)",
+                      "proved": true,
+                      "source": "H03",
+                      "children": [
+                        {
+                          "goal": "car(R1)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "goal": "car_space(G4)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "goal": "access_fit(R1,G4)",
+                  "proved": true,
+                  "source": "H07",
+                  "children": [
+                    {
+                      "goal": "request(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "unrestricted(G4)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "goal": "service_fit(R1,G4)",
+                  "proved": true,
+                  "source": "H09",
+                  "children": [
+                    {
+                      "goal": "no_charge(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "noncharging(G4)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "goal": "dimension_fit(R1,G4)",
+                  "proved": true,
+                  "source": "H11",
+                  "children": [
+                    {
+                      "goal": "height_ok(R1,G4)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "width_ok(R1,G4)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "goal": "available(R1,G4)",
+              "proved": true,
+              "source": "H14",
+              "children": [
+                {
+                  "goal": "bay(G4)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "operational(G4)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "sensor_free(G4)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "booking_clear(R1,G4)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "goal": "commercial_fit(R1,G4)",
+              "proved": false,
+              "source": "unproved",
+              "children": [
+                {
+                  "goal": "commercial_fit(R1,G4)",
+                  "proved": false,
+                  "source": "H12",
+                  "children": [
+                    {
+                      "goal": "budget_ok(R1,G4)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "duration_ok(R1,G4)",
+                      "proved": false,
+                      "source": "unproved",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "E2": {
+      "goal": "candidate(R1,E2)",
+      "proved": false,
+      "source": "unproved",
+      "children": [
+        {
+          "goal": "candidate(R1,E2)",
+          "proved": false,
+          "source": "H16",
+          "children": [
+            {
+              "goal": "admissible(R1)",
+              "proved": true,
+              "source": "H15",
+              "children": [
+                {
+                  "goal": "authorized(R1)",
+                  "proved": true,
+                  "source": "H01",
+                  "children": [
+                    {
+                      "goal": "verified(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "account_enabled(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "goal": "schedulable(R1)",
+                  "proved": true,
+                  "source": "H02",
+                  "children": [
+                    {
+                      "goal": "request(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "valid_window(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "inside_hours(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "goal": "compatible(R1,E2)",
+              "proved": false,
+              "source": "unproved",
+              "children": [
+                {
+                  "goal": "compatible(R1,E2)",
+                  "proved": false,
+                  "source": "H13",
+                  "children": [
+                    {
+                      "goal": "size_fit(R1,E2)",
+                      "proved": true,
+                      "source": "H05",
+                      "children": [
+                        {
+                          "goal": "car_sized(R1)",
+                          "proved": true,
+                          "source": "H03",
+                          "children": [
+                            {
+                              "goal": "car(R1)",
+                              "proved": true,
+                              "source": "fact",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "goal": "car_space(E2)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "goal": "access_fit(R1,E2)",
+                      "proved": true,
+                      "source": "H07",
+                      "children": [
+                        {
+                          "goal": "request(R1)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        },
+                        {
+                          "goal": "unrestricted(E2)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "goal": "service_fit(R1,E2)",
+                      "proved": false,
+                      "source": "unproved",
+                      "children": [
+                        {
+                          "goal": "service_fit(R1,E2)",
+                          "proved": false,
+                          "source": "H09",
+                          "children": [
+                            {
+                              "goal": "no_charge(R1)",
+                              "proved": true,
+                              "source": "fact",
+                              "children": []
+                            },
+                            {
+                              "goal": "noncharging(E2)",
+                              "proved": false,
+                              "source": "unproved",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "goal": "service_fit(R1,E2)",
+                          "proved": false,
+                          "source": "H10",
+                          "children": [
+                            {
+                              "goal": "charge(R1)",
+                              "proved": false,
+                              "source": "unproved",
+                              "children": []
+                            },
+                            {
+                              "goal": "ev(R1)",
+                              "proved": false,
+                              "source": "unproved",
+                              "children": []
+                            },
+                            {
+                              "goal": "charging(E2)",
+                              "proved": true,
+                              "source": "fact",
+                              "children": []
+                            },
+                            {
+                              "goal": "charger_ready(E2)",
+                              "proved": false,
+                              "source": "unproved",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "goal": "dimension_fit(R1,E2)",
+                      "proved": true,
+                      "source": "H11",
+                      "children": [
+                        {
+                          "goal": "height_ok(R1,E2)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        },
+                        {
+                          "goal": "width_ok(R1,E2)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "goal": "available(R1,E2)",
+              "proved": true,
+              "source": "H14",
+              "children": [
+                {
+                  "goal": "bay(E2)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "operational(E2)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "sensor_free(E2)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "booking_clear(R1,E2)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "goal": "commercial_fit(R1,E2)",
+              "proved": true,
+              "source": "H12",
+              "children": [
+                {
+                  "goal": "budget_ok(R1,E2)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "duration_ok(R1,E2)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "goal": "candidate(R1,A2)",
+      "proved": false,
+      "source": "unproved",
+      "children": [
+        {
+          "goal": "candidate(R1,A2)",
+          "proved": false,
+          "source": "H16",
+          "children": [
+            {
+              "goal": "admissible(R1)",
+              "proved": true,
+              "source": "H15",
+              "children": [
+                {
+                  "goal": "authorized(R1)",
+                  "proved": true,
+                  "source": "H01",
+                  "children": [
+                    {
+                      "goal": "verified(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "account_enabled(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "goal": "schedulable(R1)",
+                  "proved": true,
+                  "source": "H02",
+                  "children": [
+                    {
+                      "goal": "request(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "valid_window(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "inside_hours(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "goal": "compatible(R1,A2)",
+              "proved": false,
+              "source": "unproved",
+              "children": [
+                {
+                  "goal": "compatible(R1,A2)",
+                  "proved": false,
+                  "source": "H13",
+                  "children": [
+                    {
+                      "goal": "size_fit(R1,A2)",
+                      "proved": true,
+                      "source": "H05",
+                      "children": [
+                        {
+                          "goal": "car_sized(R1)",
+                          "proved": true,
+                          "source": "H03",
+                          "children": [
+                            {
+                              "goal": "car(R1)",
+                              "proved": true,
+                              "source": "fact",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "goal": "car_space(A2)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "goal": "access_fit(R1,A2)",
+                      "proved": false,
+                      "source": "unproved",
+                      "children": [
+                        {
+                          "goal": "access_fit(R1,A2)",
+                          "proved": false,
+                          "source": "H07",
+                          "children": [
+                            {
+                              "goal": "request(R1)",
+                              "proved": true,
+                              "source": "fact",
+                              "children": []
+                            },
+                            {
+                              "goal": "unrestricted(A2)",
+                              "proved": false,
+                              "source": "unproved",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "goal": "access_fit(R1,A2)",
+                          "proved": false,
+                          "source": "H08",
+                          "children": [
+                            {
+                              "goal": "badge(R1)",
+                              "proved": false,
+                              "source": "unproved",
+                              "children": []
+                            },
+                            {
+                              "goal": "accessible(A2)",
+                              "proved": true,
+                              "source": "fact",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "goal": "service_fit(R1,A2)",
+                      "proved": true,
+                      "source": "H09",
+                      "children": [
+                        {
+                          "goal": "no_charge(R1)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        },
+                        {
+                          "goal": "noncharging(A2)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "goal": "dimension_fit(R1,A2)",
+                      "proved": true,
+                      "source": "H11",
+                      "children": [
+                        {
+                          "goal": "height_ok(R1,A2)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        },
+                        {
+                          "goal": "width_ok(R1,A2)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "goal": "available(R1,A2)",
+              "proved": true,
+              "source": "H14",
+              "children": [
+                {
+                  "goal": "bay(A2)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "operational(A2)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "sensor_free(A2)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "booking_clear(R1,A2)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "goal": "commercial_fit(R1,A2)",
+              "proved": true,
+              "source": "H12",
+              "children": [
+                {
+                  "goal": "budget_ok(R1,A2)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "duration_ok(R1,A2)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "G5": {
+      "goal": "candidate(R1,G5)",
+      "proved": false,
+      "source": "unproved",
+      "children": [
+        {
+          "goal": "candidate(R1,G5)",
+          "proved": false,
+          "source": "H16",
+          "children": [
+            {
+              "goal": "admissible(R1)",
+              "proved": true,
+              "source": "H15",
+              "children": [
+                {
+                  "goal": "authorized(R1)",
+                  "proved": true,
+                  "source": "H01",
+                  "children": [
+                    {
+                      "goal": "verified(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "account_enabled(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "goal": "schedulable(R1)",
+                  "proved": true,
+                  "source": "H02",
+                  "children": [
+                    {
+                      "goal": "request(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "valid_window(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "inside_hours(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "goal": "compatible(R1,G5)",
+              "proved": true,
+              "source": "H13",
+              "children": [
+                {
+                  "goal": "size_fit(R1,G5)",
+                  "proved": true,
+                  "source": "H05",
+                  "children": [
+                    {
+                      "goal": "car_sized(R1)",
+                      "proved": true,
+                      "source": "H03",
+                      "children": [
+                        {
+                          "goal": "car(R1)",
+                          "proved": true,
+                          "source": "fact",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "goal": "car_space(G5)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "goal": "access_fit(R1,G5)",
+                  "proved": true,
+                  "source": "H07",
+                  "children": [
+                    {
+                      "goal": "request(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "unrestricted(G5)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "goal": "service_fit(R1,G5)",
+                  "proved": true,
+                  "source": "H09",
+                  "children": [
+                    {
+                      "goal": "no_charge(R1)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "noncharging(G5)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "goal": "dimension_fit(R1,G5)",
+                  "proved": true,
+                  "source": "H11",
+                  "children": [
+                    {
+                      "goal": "height_ok(R1,G5)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "width_ok(R1,G5)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "goal": "available(R1,G5)",
+              "proved": false,
+              "source": "unproved",
+              "children": [
+                {
+                  "goal": "available(R1,G5)",
+                  "proved": false,
+                  "source": "H14",
+                  "children": [
+                    {
+                      "goal": "bay(G5)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "operational(G5)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    },
+                    {
+                      "goal": "sensor_free(G5)",
+                      "proved": false,
+                      "source": "unproved",
+                      "children": []
+                    },
+                    {
+                      "goal": "booking_clear(R1,G5)",
+                      "proved": true,
+                      "source": "fact",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "goal": "commercial_fit(R1,G5)",
+              "proved": true,
+              "source": "H12",
+              "children": [
+                {
+                  "goal": "budget_ok(R1,G5)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                },
+                {
+                  "goal": "duration_ok(R1,G5)",
+                  "proved": true,
+                  "source": "fact",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "failures": {
+    "G1": [],
+    "G2": [],
+    "A1": [
+      "Accessibility badge"
+    ],
+    "E1": [
+      "Charging service"
+    ],
+    "M1": [
+      "Vehicle category"
+    ],
+    "G3": [
+      "Vehicle clearance"
+    ],
+    "G4": [
+      "Maximum stay"
+    ],
+    "E2": [
+      "Charging service"
+    ],
+    "A2": [
+      "Accessibility badge"
+    ],
+    "G5": [
+      "Sensor status"
+    ]
+  },
+  "costs": {
+    "G1": 100,
+    "G2": 80,
+    "A1": 100,
+    "E1": 180,
+    "M1": 40,
+    "G3": 50,
+    "G4": 60,
+    "E2": 160,
+    "A2": 90,
+    "G5": 70
+  },
+  "rules": [
+    {
+      "name": "H01",
+      "head": "authorized(R1)",
+      "body": [
+        "verified(R1)",
+        "account_enabled(R1)"
+      ]
+    },
+    {
+      "name": "H02",
+      "head": "schedulable(R1)",
+      "body": [
+        "request(R1)",
+        "valid_window(R1)",
+        "inside_hours(R1)"
+      ]
+    },
+    {
+      "name": "H03",
+      "head": "car_sized(R1)",
+      "body": [
+        "car(R1)"
+      ]
+    },
+    {
+      "name": "H04",
+      "head": "car_sized(R1)",
+      "body": [
+        "ev(R1)"
+      ]
+    },
+    {
+      "name": "H05",
+      "head": "size_fit(R1,G1)",
+      "body": [
+        "car_sized(R1)",
+        "car_space(G1)"
+      ]
+    },
+    {
+      "name": "H05",
+      "head": "size_fit(R1,G2)",
+      "body": [
+        "car_sized(R1)",
+        "car_space(G2)"
+      ]
+    },
+    {
+      "name": "H05",
+      "head": "size_fit(R1,A1)",
+      "body": [
+        "car_sized(R1)",
+        "car_space(A1)"
+      ]
+    },
+    {
+      "name": "H05",
+      "head": "size_fit(R1,E1)",
+      "body": [
+        "car_sized(R1)",
+        "car_space(E1)"
+      ]
+    },
+    {
+      "name": "H05",
+      "head": "size_fit(R1,M1)",
+      "body": [
+        "car_sized(R1)",
+        "car_space(M1)"
+      ]
+    },
+    {
+      "name": "H05",
+      "head": "size_fit(R1,G3)",
+      "body": [
+        "car_sized(R1)",
+        "car_space(G3)"
+      ]
+    },
+    {
+      "name": "H05",
+      "head": "size_fit(R1,G4)",
+      "body": [
+        "car_sized(R1)",
+        "car_space(G4)"
+      ]
+    },
+    {
+      "name": "H05",
+      "head": "size_fit(R1,E2)",
+      "body": [
+        "car_sized(R1)",
+        "car_space(E2)"
+      ]
+    },
+    {
+      "name": "H05",
+      "head": "size_fit(R1,A2)",
+      "body": [
+        "car_sized(R1)",
+        "car_space(A2)"
+      ]
+    },
+    {
+      "name": "H05",
+      "head": "size_fit(R1,G5)",
+      "body": [
+        "car_sized(R1)",
+        "car_space(G5)"
+      ]
+    },
+    {
+      "name": "H06",
+      "head": "size_fit(R1,G1)",
+      "body": [
+        "motorcycle(R1)",
+        "motorcycle_space(G1)"
+      ]
+    },
+    {
+      "name": "H06",
+      "head": "size_fit(R1,G2)",
+      "body": [
+        "motorcycle(R1)",
+        "motorcycle_space(G2)"
+      ]
+    },
+    {
+      "name": "H06",
+      "head": "size_fit(R1,A1)",
+      "body": [
+        "motorcycle(R1)",
+        "motorcycle_space(A1)"
+      ]
+    },
+    {
+      "name": "H06",
+      "head": "size_fit(R1,E1)",
+      "body": [
+        "motorcycle(R1)",
+        "motorcycle_space(E1)"
+      ]
+    },
+    {
+      "name": "H06",
+      "head": "size_fit(R1,M1)",
+      "body": [
+        "motorcycle(R1)",
+        "motorcycle_space(M1)"
+      ]
+    },
+    {
+      "name": "H06",
+      "head": "size_fit(R1,G3)",
+      "body": [
+        "motorcycle(R1)",
+        "motorcycle_space(G3)"
+      ]
+    },
+    {
+      "name": "H06",
+      "head": "size_fit(R1,G4)",
+      "body": [
+        "motorcycle(R1)",
+        "motorcycle_space(G4)"
+      ]
+    },
+    {
+      "name": "H06",
+      "head": "size_fit(R1,E2)",
+      "body": [
+        "motorcycle(R1)",
+        "motorcycle_space(E2)"
+      ]
+    },
+    {
+      "name": "H06",
+      "head": "size_fit(R1,A2)",
+      "body": [
+        "motorcycle(R1)",
+        "motorcycle_space(A2)"
+      ]
+    },
+    {
+      "name": "H06",
+      "head": "size_fit(R1,G5)",
+      "body": [
+        "motorcycle(R1)",
+        "motorcycle_space(G5)"
+      ]
+    },
+    {
+      "name": "H07",
+      "head": "access_fit(R1,G1)",
+      "body": [
+        "request(R1)",
+        "unrestricted(G1)"
+      ]
+    },
+    {
+      "name": "H07",
+      "head": "access_fit(R1,G2)",
+      "body": [
+        "request(R1)",
+        "unrestricted(G2)"
+      ]
+    },
+    {
+      "name": "H07",
+      "head": "access_fit(R1,A1)",
+      "body": [
+        "request(R1)",
+        "unrestricted(A1)"
+      ]
+    },
+    {
+      "name": "H07",
+      "head": "access_fit(R1,E1)",
+      "body": [
+        "request(R1)",
+        "unrestricted(E1)"
+      ]
+    },
+    {
+      "name": "H07",
+      "head": "access_fit(R1,M1)",
+      "body": [
+        "request(R1)",
+        "unrestricted(M1)"
+      ]
+    },
+    {
+      "name": "H07",
+      "head": "access_fit(R1,G3)",
+      "body": [
+        "request(R1)",
+        "unrestricted(G3)"
+      ]
+    },
+    {
+      "name": "H07",
+      "head": "access_fit(R1,G4)",
+      "body": [
+        "request(R1)",
+        "unrestricted(G4)"
+      ]
+    },
+    {
+      "name": "H07",
+      "head": "access_fit(R1,E2)",
+      "body": [
+        "request(R1)",
+        "unrestricted(E2)"
+      ]
+    },
+    {
+      "name": "H07",
+      "head": "access_fit(R1,A2)",
+      "body": [
+        "request(R1)",
+        "unrestricted(A2)"
+      ]
+    },
+    {
+      "name": "H07",
+      "head": "access_fit(R1,G5)",
+      "body": [
+        "request(R1)",
+        "unrestricted(G5)"
+      ]
+    },
+    {
+      "name": "H08",
+      "head": "access_fit(R1,G1)",
+      "body": [
+        "badge(R1)",
+        "accessible(G1)"
+      ]
+    },
+    {
+      "name": "H08",
+      "head": "access_fit(R1,G2)",
+      "body": [
+        "badge(R1)",
+        "accessible(G2)"
+      ]
+    },
+    {
+      "name": "H08",
+      "head": "access_fit(R1,A1)",
+      "body": [
+        "badge(R1)",
+        "accessible(A1)"
+      ]
+    },
+    {
+      "name": "H08",
+      "head": "access_fit(R1,E1)",
+      "body": [
+        "badge(R1)",
+        "accessible(E1)"
+      ]
+    },
+    {
+      "name": "H08",
+      "head": "access_fit(R1,M1)",
+      "body": [
+        "badge(R1)",
+        "accessible(M1)"
+      ]
+    },
+    {
+      "name": "H08",
+      "head": "access_fit(R1,G3)",
+      "body": [
+        "badge(R1)",
+        "accessible(G3)"
+      ]
+    },
+    {
+      "name": "H08",
+      "head": "access_fit(R1,G4)",
+      "body": [
+        "badge(R1)",
+        "accessible(G4)"
+      ]
+    },
+    {
+      "name": "H08",
+      "head": "access_fit(R1,E2)",
+      "body": [
+        "badge(R1)",
+        "accessible(E2)"
+      ]
+    },
+    {
+      "name": "H08",
+      "head": "access_fit(R1,A2)",
+      "body": [
+        "badge(R1)",
+        "accessible(A2)"
+      ]
+    },
+    {
+      "name": "H08",
+      "head": "access_fit(R1,G5)",
+      "body": [
+        "badge(R1)",
+        "accessible(G5)"
+      ]
+    },
+    {
+      "name": "H09",
+      "head": "service_fit(R1,G1)",
+      "body": [
+        "no_charge(R1)",
+        "noncharging(G1)"
+      ]
+    },
+    {
+      "name": "H09",
+      "head": "service_fit(R1,G2)",
+      "body": [
+        "no_charge(R1)",
+        "noncharging(G2)"
+      ]
+    },
+    {
+      "name": "H09",
+      "head": "service_fit(R1,A1)",
+      "body": [
+        "no_charge(R1)",
+        "noncharging(A1)"
+      ]
+    },
+    {
+      "name": "H09",
+      "head": "service_fit(R1,E1)",
+      "body": [
+        "no_charge(R1)",
+        "noncharging(E1)"
+      ]
+    },
+    {
+      "name": "H09",
+      "head": "service_fit(R1,M1)",
+      "body": [
+        "no_charge(R1)",
+        "noncharging(M1)"
+      ]
+    },
+    {
+      "name": "H09",
+      "head": "service_fit(R1,G3)",
+      "body": [
+        "no_charge(R1)",
+        "noncharging(G3)"
+      ]
+    },
+    {
+      "name": "H09",
+      "head": "service_fit(R1,G4)",
+      "body": [
+        "no_charge(R1)",
+        "noncharging(G4)"
+      ]
+    },
+    {
+      "name": "H09",
+      "head": "service_fit(R1,E2)",
+      "body": [
+        "no_charge(R1)",
+        "noncharging(E2)"
+      ]
+    },
+    {
+      "name": "H09",
+      "head": "service_fit(R1,A2)",
+      "body": [
+        "no_charge(R1)",
+        "noncharging(A2)"
+      ]
+    },
+    {
+      "name": "H09",
+      "head": "service_fit(R1,G5)",
+      "body": [
+        "no_charge(R1)",
+        "noncharging(G5)"
+      ]
+    },
+    {
+      "name": "H10",
+      "head": "service_fit(R1,G1)",
+      "body": [
+        "charge(R1)",
+        "ev(R1)",
+        "charging(G1)",
+        "charger_ready(G1)"
+      ]
+    },
+    {
+      "name": "H10",
+      "head": "service_fit(R1,G2)",
+      "body": [
+        "charge(R1)",
+        "ev(R1)",
+        "charging(G2)",
+        "charger_ready(G2)"
+      ]
+    },
+    {
+      "name": "H10",
+      "head": "service_fit(R1,A1)",
+      "body": [
+        "charge(R1)",
+        "ev(R1)",
+        "charging(A1)",
+        "charger_ready(A1)"
+      ]
+    },
+    {
+      "name": "H10",
+      "head": "service_fit(R1,E1)",
+      "body": [
+        "charge(R1)",
+        "ev(R1)",
+        "charging(E1)",
+        "charger_ready(E1)"
+      ]
+    },
+    {
+      "name": "H10",
+      "head": "service_fit(R1,M1)",
+      "body": [
+        "charge(R1)",
+        "ev(R1)",
+        "charging(M1)",
+        "charger_ready(M1)"
+      ]
+    },
+    {
+      "name": "H10",
+      "head": "service_fit(R1,G3)",
+      "body": [
+        "charge(R1)",
+        "ev(R1)",
+        "charging(G3)",
+        "charger_ready(G3)"
+      ]
+    },
+    {
+      "name": "H10",
+      "head": "service_fit(R1,G4)",
+      "body": [
+        "charge(R1)",
+        "ev(R1)",
+        "charging(G4)",
+        "charger_ready(G4)"
+      ]
+    },
+    {
+      "name": "H10",
+      "head": "service_fit(R1,E2)",
+      "body": [
+        "charge(R1)",
+        "ev(R1)",
+        "charging(E2)",
+        "charger_ready(E2)"
+      ]
+    },
+    {
+      "name": "H10",
+      "head": "service_fit(R1,A2)",
+      "body": [
+        "charge(R1)",
+        "ev(R1)",
+        "charging(A2)",
+        "charger_ready(A2)"
+      ]
+    },
+    {
+      "name": "H10",
+      "head": "service_fit(R1,G5)",
+      "body": [
+        "charge(R1)",
+        "ev(R1)",
+        "charging(G5)",
+        "charger_ready(G5)"
+      ]
+    },
+    {
+      "name": "H11",
+      "head": "dimension_fit(R1,G1)",
+      "body": [
+        "height_ok(R1,G1)",
+        "width_ok(R1,G1)"
+      ]
+    },
+    {
+      "name": "H11",
+      "head": "dimension_fit(R1,G2)",
+      "body": [
+        "height_ok(R1,G2)",
+        "width_ok(R1,G2)"
+      ]
+    },
+    {
+      "name": "H11",
+      "head": "dimension_fit(R1,A1)",
+      "body": [
+        "height_ok(R1,A1)",
+        "width_ok(R1,A1)"
+      ]
+    },
+    {
+      "name": "H11",
+      "head": "dimension_fit(R1,E1)",
+      "body": [
+        "height_ok(R1,E1)",
+        "width_ok(R1,E1)"
+      ]
+    },
+    {
+      "name": "H11",
+      "head": "dimension_fit(R1,M1)",
+      "body": [
+        "height_ok(R1,M1)",
+        "width_ok(R1,M1)"
+      ]
+    },
+    {
+      "name": "H11",
+      "head": "dimension_fit(R1,G3)",
+      "body": [
+        "height_ok(R1,G3)",
+        "width_ok(R1,G3)"
+      ]
+    },
+    {
+      "name": "H11",
+      "head": "dimension_fit(R1,G4)",
+      "body": [
+        "height_ok(R1,G4)",
+        "width_ok(R1,G4)"
+      ]
+    },
+    {
+      "name": "H11",
+      "head": "dimension_fit(R1,E2)",
+      "body": [
+        "height_ok(R1,E2)",
+        "width_ok(R1,E2)"
+      ]
+    },
+    {
+      "name": "H11",
+      "head": "dimension_fit(R1,A2)",
+      "body": [
+        "height_ok(R1,A2)",
+        "width_ok(R1,A2)"
+      ]
+    },
+    {
+      "name": "H11",
+      "head": "dimension_fit(R1,G5)",
+      "body": [
+        "height_ok(R1,G5)",
+        "width_ok(R1,G5)"
+      ]
+    },
+    {
+      "name": "H12",
+      "head": "commercial_fit(R1,G1)",
+      "body": [
+        "budget_ok(R1,G1)",
+        "duration_ok(R1,G1)"
+      ]
+    },
+    {
+      "name": "H12",
+      "head": "commercial_fit(R1,G2)",
+      "body": [
+        "budget_ok(R1,G2)",
+        "duration_ok(R1,G2)"
+      ]
+    },
+    {
+      "name": "H12",
+      "head": "commercial_fit(R1,A1)",
+      "body": [
+        "budget_ok(R1,A1)",
+        "duration_ok(R1,A1)"
+      ]
+    },
+    {
+      "name": "H12",
+      "head": "commercial_fit(R1,E1)",
+      "body": [
+        "budget_ok(R1,E1)",
+        "duration_ok(R1,E1)"
+      ]
+    },
+    {
+      "name": "H12",
+      "head": "commercial_fit(R1,M1)",
+      "body": [
+        "budget_ok(R1,M1)",
+        "duration_ok(R1,M1)"
+      ]
+    },
+    {
+      "name": "H12",
+      "head": "commercial_fit(R1,G3)",
+      "body": [
+        "budget_ok(R1,G3)",
+        "duration_ok(R1,G3)"
+      ]
+    },
+    {
+      "name": "H12",
+      "head": "commercial_fit(R1,G4)",
+      "body": [
+        "budget_ok(R1,G4)",
+        "duration_ok(R1,G4)"
+      ]
+    },
+    {
+      "name": "H12",
+      "head": "commercial_fit(R1,E2)",
+      "body": [
+        "budget_ok(R1,E2)",
+        "duration_ok(R1,E2)"
+      ]
+    },
+    {
+      "name": "H12",
+      "head": "commercial_fit(R1,A2)",
+      "body": [
+        "budget_ok(R1,A2)",
+        "duration_ok(R1,A2)"
+      ]
+    },
+    {
+      "name": "H12",
+      "head": "commercial_fit(R1,G5)",
+      "body": [
+        "budget_ok(R1,G5)",
+        "duration_ok(R1,G5)"
+      ]
+    },
+    {
+      "name": "H13",
+      "head": "compatible(R1,G1)",
+      "body": [
+        "size_fit(R1,G1)",
+        "access_fit(R1,G1)",
+        "service_fit(R1,G1)",
+        "dimension_fit(R1,G1)"
+      ]
+    },
+    {
+      "name": "H13",
+      "head": "compatible(R1,G2)",
+      "body": [
+        "size_fit(R1,G2)",
+        "access_fit(R1,G2)",
+        "service_fit(R1,G2)",
+        "dimension_fit(R1,G2)"
+      ]
+    },
+    {
+      "name": "H13",
+      "head": "compatible(R1,A1)",
+      "body": [
+        "size_fit(R1,A1)",
+        "access_fit(R1,A1)",
+        "service_fit(R1,A1)",
+        "dimension_fit(R1,A1)"
+      ]
+    },
+    {
+      "name": "H13",
+      "head": "compatible(R1,E1)",
+      "body": [
+        "size_fit(R1,E1)",
+        "access_fit(R1,E1)",
+        "service_fit(R1,E1)",
+        "dimension_fit(R1,E1)"
+      ]
+    },
+    {
+      "name": "H13",
+      "head": "compatible(R1,M1)",
+      "body": [
+        "size_fit(R1,M1)",
+        "access_fit(R1,M1)",
+        "service_fit(R1,M1)",
+        "dimension_fit(R1,M1)"
+      ]
+    },
+    {
+      "name": "H13",
+      "head": "compatible(R1,G3)",
+      "body": [
+        "size_fit(R1,G3)",
+        "access_fit(R1,G3)",
+        "service_fit(R1,G3)",
+        "dimension_fit(R1,G3)"
+      ]
+    },
+    {
+      "name": "H13",
+      "head": "compatible(R1,G4)",
+      "body": [
+        "size_fit(R1,G4)",
+        "access_fit(R1,G4)",
+        "service_fit(R1,G4)",
+        "dimension_fit(R1,G4)"
+      ]
+    },
+    {
+      "name": "H13",
+      "head": "compatible(R1,E2)",
+      "body": [
+        "size_fit(R1,E2)",
+        "access_fit(R1,E2)",
+        "service_fit(R1,E2)",
+        "dimension_fit(R1,E2)"
+      ]
+    },
+    {
+      "name": "H13",
+      "head": "compatible(R1,A2)",
+      "body": [
+        "size_fit(R1,A2)",
+        "access_fit(R1,A2)",
+        "service_fit(R1,A2)",
+        "dimension_fit(R1,A2)"
+      ]
+    },
+    {
+      "name": "H13",
+      "head": "compatible(R1,G5)",
+      "body": [
+        "size_fit(R1,G5)",
+        "access_fit(R1,G5)",
+        "service_fit(R1,G5)",
+        "dimension_fit(R1,G5)"
+      ]
+    },
+    {
+      "name": "H14",
+      "head": "available(R1,G1)",
+      "body": [
+        "bay(G1)",
+        "operational(G1)",
+        "sensor_free(G1)",
+        "booking_clear(R1,G1)"
+      ]
+    },
+    {
+      "name": "H14",
+      "head": "available(R1,G2)",
+      "body": [
+        "bay(G2)",
+        "operational(G2)",
+        "sensor_free(G2)",
+        "booking_clear(R1,G2)"
+      ]
+    },
+    {
+      "name": "H14",
+      "head": "available(R1,A1)",
+      "body": [
+        "bay(A1)",
+        "operational(A1)",
+        "sensor_free(A1)",
+        "booking_clear(R1,A1)"
+      ]
+    },
+    {
+      "name": "H14",
+      "head": "available(R1,E1)",
+      "body": [
+        "bay(E1)",
+        "operational(E1)",
+        "sensor_free(E1)",
+        "booking_clear(R1,E1)"
+      ]
+    },
+    {
+      "name": "H14",
+      "head": "available(R1,M1)",
+      "body": [
+        "bay(M1)",
+        "operational(M1)",
+        "sensor_free(M1)",
+        "booking_clear(R1,M1)"
+      ]
+    },
+    {
+      "name": "H14",
+      "head": "available(R1,G3)",
+      "body": [
+        "bay(G3)",
+        "operational(G3)",
+        "sensor_free(G3)",
+        "booking_clear(R1,G3)"
+      ]
+    },
+    {
+      "name": "H14",
+      "head": "available(R1,G4)",
+      "body": [
+        "bay(G4)",
+        "operational(G4)",
+        "sensor_free(G4)",
+        "booking_clear(R1,G4)"
+      ]
+    },
+    {
+      "name": "H14",
+      "head": "available(R1,E2)",
+      "body": [
+        "bay(E2)",
+        "operational(E2)",
+        "sensor_free(E2)",
+        "booking_clear(R1,E2)"
+      ]
+    },
+    {
+      "name": "H14",
+      "head": "available(R1,A2)",
+      "body": [
+        "bay(A2)",
+        "operational(A2)",
+        "sensor_free(A2)",
+        "booking_clear(R1,A2)"
+      ]
+    },
+    {
+      "name": "H14",
+      "head": "available(R1,G5)",
+      "body": [
+        "bay(G5)",
+        "operational(G5)",
+        "sensor_free(G5)",
+        "booking_clear(R1,G5)"
+      ]
+    },
+    {
+      "name": "H15",
+      "head": "admissible(R1)",
+      "body": [
+        "authorized(R1)",
+        "schedulable(R1)"
+      ]
+    },
+    {
+      "name": "H16",
+      "head": "candidate(R1,G1)",
+      "body": [
+        "admissible(R1)",
+        "compatible(R1,G1)",
+        "available(R1,G1)",
+        "commercial_fit(R1,G1)"
+      ]
+    },
+    {
+      "name": "H16",
+      "head": "candidate(R1,G2)",
+      "body": [
+        "admissible(R1)",
+        "compatible(R1,G2)",
+        "available(R1,G2)",
+        "commercial_fit(R1,G2)"
+      ]
+    },
+    {
+      "name": "H16",
+      "head": "candidate(R1,A1)",
+      "body": [
+        "admissible(R1)",
+        "compatible(R1,A1)",
+        "available(R1,A1)",
+        "commercial_fit(R1,A1)"
+      ]
+    },
+    {
+      "name": "H16",
+      "head": "candidate(R1,E1)",
+      "body": [
+        "admissible(R1)",
+        "compatible(R1,E1)",
+        "available(R1,E1)",
+        "commercial_fit(R1,E1)"
+      ]
+    },
+    {
+      "name": "H16",
+      "head": "candidate(R1,M1)",
+      "body": [
+        "admissible(R1)",
+        "compatible(R1,M1)",
+        "available(R1,M1)",
+        "commercial_fit(R1,M1)"
+      ]
+    },
+    {
+      "name": "H16",
+      "head": "candidate(R1,G3)",
+      "body": [
+        "admissible(R1)",
+        "compatible(R1,G3)",
+        "available(R1,G3)",
+        "commercial_fit(R1,G3)"
+      ]
+    },
+    {
+      "name": "H16",
+      "head": "candidate(R1,G4)",
+      "body": [
+        "admissible(R1)",
+        "compatible(R1,G4)",
+        "available(R1,G4)",
+        "commercial_fit(R1,G4)"
+      ]
+    },
+    {
+      "name": "H16",
+      "head": "candidate(R1,E2)",
+      "body": [
+        "admissible(R1)",
+        "compatible(R1,E2)",
+        "available(R1,E2)",
+        "commercial_fit(R1,E2)"
+      ]
+    },
+    {
+      "name": "H16",
+      "head": "candidate(R1,A2)",
+      "body": [
+        "admissible(R1)",
+        "compatible(R1,A2)",
+        "available(R1,A2)",
+        "commercial_fit(R1,A2)"
+      ]
+    },
+    {
+      "name": "H16",
+      "head": "candidate(R1,G5)",
+      "body": [
+        "admissible(R1)",
+        "compatible(R1,G5)",
+        "available(R1,G5)",
+        "commercial_fit(R1,G5)"
+      ]
+    },
+    {
+      "name": "H17",
+      "head": "blocked(R1,G1)",
+      "body": [
+        "booking_conflict(R1,G1)"
+      ]
+    },
+    {
+      "name": "H17",
+      "head": "blocked(R1,G2)",
+      "body": [
+        "booking_conflict(R1,G2)"
+      ]
+    },
+    {
+      "name": "H17",
+      "head": "blocked(R1,A1)",
+      "body": [
+        "booking_conflict(R1,A1)"
+      ]
+    },
+    {
+      "name": "H17",
+      "head": "blocked(R1,E1)",
+      "body": [
+        "booking_conflict(R1,E1)"
+      ]
+    },
+    {
+      "name": "H17",
+      "head": "blocked(R1,M1)",
+      "body": [
+        "booking_conflict(R1,M1)"
+      ]
+    },
+    {
+      "name": "H17",
+      "head": "blocked(R1,G3)",
+      "body": [
+        "booking_conflict(R1,G3)"
+      ]
+    },
+    {
+      "name": "H17",
+      "head": "blocked(R1,G4)",
+      "body": [
+        "booking_conflict(R1,G4)"
+      ]
+    },
+    {
+      "name": "H17",
+      "head": "blocked(R1,E2)",
+      "body": [
+        "booking_conflict(R1,E2)"
+      ]
+    },
+    {
+      "name": "H17",
+      "head": "blocked(R1,A2)",
+      "body": [
+        "booking_conflict(R1,A2)"
+      ]
+    },
+    {
+      "name": "H17",
+      "head": "blocked(R1,G5)",
+      "body": [
+        "booking_conflict(R1,G5)"
+      ]
+    },
+    {
+      "name": "H18",
+      "head": "blocked(R1,G1)",
+      "body": [
+        "request(R1)",
+        "closed(G1)"
+      ]
+    },
+    {
+      "name": "H18",
+      "head": "blocked(R1,G2)",
+      "body": [
+        "request(R1)",
+        "closed(G2)"
+      ]
+    },
+    {
+      "name": "H18",
+      "head": "blocked(R1,A1)",
+      "body": [
+        "request(R1)",
+        "closed(A1)"
+      ]
+    },
+    {
+      "name": "H18",
+      "head": "blocked(R1,E1)",
+      "body": [
+        "request(R1)",
+        "closed(E1)"
+      ]
+    },
+    {
+      "name": "H18",
+      "head": "blocked(R1,M1)",
+      "body": [
+        "request(R1)",
+        "closed(M1)"
+      ]
+    },
+    {
+      "name": "H18",
+      "head": "blocked(R1,G3)",
+      "body": [
+        "request(R1)",
+        "closed(G3)"
+      ]
+    },
+    {
+      "name": "H18",
+      "head": "blocked(R1,G4)",
+      "body": [
+        "request(R1)",
+        "closed(G4)"
+      ]
+    },
+    {
+      "name": "H18",
+      "head": "blocked(R1,E2)",
+      "body": [
+        "request(R1)",
+        "closed(E2)"
+      ]
+    },
+    {
+      "name": "H18",
+      "head": "blocked(R1,A2)",
+      "body": [
+        "request(R1)",
+        "closed(A2)"
+      ]
+    },
+    {
+      "name": "H18",
+      "head": "blocked(R1,G5)",
+      "body": [
+        "request(R1)",
+        "closed(G5)"
+      ]
+    },
+    {
+      "name": "H19",
+      "head": "blocked(R1,G1)",
+      "body": [
+        "request(R1)",
+        "sensor_occupied(G1)"
+      ]
+    },
+    {
+      "name": "H19",
+      "head": "blocked(R1,G2)",
+      "body": [
+        "request(R1)",
+        "sensor_occupied(G2)"
+      ]
+    },
+    {
+      "name": "H19",
+      "head": "blocked(R1,A1)",
+      "body": [
+        "request(R1)",
+        "sensor_occupied(A1)"
+      ]
+    },
+    {
+      "name": "H19",
+      "head": "blocked(R1,E1)",
+      "body": [
+        "request(R1)",
+        "sensor_occupied(E1)"
+      ]
+    },
+    {
+      "name": "H19",
+      "head": "blocked(R1,M1)",
+      "body": [
+        "request(R1)",
+        "sensor_occupied(M1)"
+      ]
+    },
+    {
+      "name": "H19",
+      "head": "blocked(R1,G3)",
+      "body": [
+        "request(R1)",
+        "sensor_occupied(G3)"
+      ]
+    },
+    {
+      "name": "H19",
+      "head": "blocked(R1,G4)",
+      "body": [
+        "request(R1)",
+        "sensor_occupied(G4)"
+      ]
+    },
+    {
+      "name": "H19",
+      "head": "blocked(R1,E2)",
+      "body": [
+        "request(R1)",
+        "sensor_occupied(E2)"
+      ]
+    },
+    {
+      "name": "H19",
+      "head": "blocked(R1,A2)",
+      "body": [
+        "request(R1)",
+        "sensor_occupied(A2)"
+      ]
+    },
+    {
+      "name": "H19",
+      "head": "blocked(R1,G5)",
+      "body": [
+        "request(R1)",
+        "sensor_occupied(G5)"
+      ]
+    },
+    {
+      "name": "H20",
+      "head": "manual_review(R1,G1)",
+      "body": [
+        "request(R1)",
+        "sensor_unknown(G1)"
+      ]
+    },
+    {
+      "name": "H20",
+      "head": "manual_review(R1,G2)",
+      "body": [
+        "request(R1)",
+        "sensor_unknown(G2)"
+      ]
+    },
+    {
+      "name": "H20",
+      "head": "manual_review(R1,A1)",
+      "body": [
+        "request(R1)",
+        "sensor_unknown(A1)"
+      ]
+    },
+    {
+      "name": "H20",
+      "head": "manual_review(R1,E1)",
+      "body": [
+        "request(R1)",
+        "sensor_unknown(E1)"
+      ]
+    },
+    {
+      "name": "H20",
+      "head": "manual_review(R1,M1)",
+      "body": [
+        "request(R1)",
+        "sensor_unknown(M1)"
+      ]
+    },
+    {
+      "name": "H20",
+      "head": "manual_review(R1,G3)",
+      "body": [
+        "request(R1)",
+        "sensor_unknown(G3)"
+      ]
+    },
+    {
+      "name": "H20",
+      "head": "manual_review(R1,G4)",
+      "body": [
+        "request(R1)",
+        "sensor_unknown(G4)"
+      ]
+    },
+    {
+      "name": "H20",
+      "head": "manual_review(R1,E2)",
+      "body": [
+        "request(R1)",
+        "sensor_unknown(E2)"
+      ]
+    },
+    {
+      "name": "H20",
+      "head": "manual_review(R1,A2)",
+      "body": [
+        "request(R1)",
+        "sensor_unknown(A2)"
+      ]
+    },
+    {
+      "name": "H20",
+      "head": "manual_review(R1,G5)",
+      "body": [
+        "request(R1)",
+        "sensor_unknown(G5)"
+      ]
+    },
+    {
+      "name": "H21",
+      "head": "blocked(R1,G1)",
+      "body": [
+        "charge(R1)",
+        "charger_fault(G1)"
+      ]
+    },
+    {
+      "name": "H21",
+      "head": "blocked(R1,G2)",
+      "body": [
+        "charge(R1)",
+        "charger_fault(G2)"
+      ]
+    },
+    {
+      "name": "H21",
+      "head": "blocked(R1,A1)",
+      "body": [
+        "charge(R1)",
+        "charger_fault(A1)"
+      ]
+    },
+    {
+      "name": "H21",
+      "head": "blocked(R1,E1)",
+      "body": [
+        "charge(R1)",
+        "charger_fault(E1)"
+      ]
+    },
+    {
+      "name": "H21",
+      "head": "blocked(R1,M1)",
+      "body": [
+        "charge(R1)",
+        "charger_fault(M1)"
+      ]
+    },
+    {
+      "name": "H21",
+      "head": "blocked(R1,G3)",
+      "body": [
+        "charge(R1)",
+        "charger_fault(G3)"
+      ]
+    },
+    {
+      "name": "H21",
+      "head": "blocked(R1,G4)",
+      "body": [
+        "charge(R1)",
+        "charger_fault(G4)"
+      ]
+    },
+    {
+      "name": "H21",
+      "head": "blocked(R1,E2)",
+      "body": [
+        "charge(R1)",
+        "charger_fault(E2)"
+      ]
+    },
+    {
+      "name": "H21",
+      "head": "blocked(R1,A2)",
+      "body": [
+        "charge(R1)",
+        "charger_fault(A2)"
+      ]
+    },
+    {
+      "name": "H21",
+      "head": "blocked(R1,G5)",
+      "body": [
+        "charge(R1)",
+        "charger_fault(G5)"
+      ]
+    },
+    {
+      "name": "H22",
+      "head": "blocked(R1,G1)",
+      "body": [
+        "dimension_exceeded(R1,G1)"
+      ]
+    },
+    {
+      "name": "H22",
+      "head": "blocked(R1,G2)",
+      "body": [
+        "dimension_exceeded(R1,G2)"
+      ]
+    },
+    {
+      "name": "H22",
+      "head": "blocked(R1,A1)",
+      "body": [
+        "dimension_exceeded(R1,A1)"
+      ]
+    },
+    {
+      "name": "H22",
+      "head": "blocked(R1,E1)",
+      "body": [
+        "dimension_exceeded(R1,E1)"
+      ]
+    },
+    {
+      "name": "H22",
+      "head": "blocked(R1,M1)",
+      "body": [
+        "dimension_exceeded(R1,M1)"
+      ]
+    },
+    {
+      "name": "H22",
+      "head": "blocked(R1,G3)",
+      "body": [
+        "dimension_exceeded(R1,G3)"
+      ]
+    },
+    {
+      "name": "H22",
+      "head": "blocked(R1,G4)",
+      "body": [
+        "dimension_exceeded(R1,G4)"
+      ]
+    },
+    {
+      "name": "H22",
+      "head": "blocked(R1,E2)",
+      "body": [
+        "dimension_exceeded(R1,E2)"
+      ]
+    },
+    {
+      "name": "H22",
+      "head": "blocked(R1,A2)",
+      "body": [
+        "dimension_exceeded(R1,A2)"
+      ]
+    },
+    {
+      "name": "H22",
+      "head": "blocked(R1,G5)",
+      "body": [
+        "dimension_exceeded(R1,G5)"
+      ]
+    },
+    {
+      "name": "H23",
+      "head": "unaffordable(R1,G1)",
+      "body": [
+        "over_budget(R1,G1)"
+      ]
+    },
+    {
+      "name": "H23",
+      "head": "unaffordable(R1,G2)",
+      "body": [
+        "over_budget(R1,G2)"
+      ]
+    },
+    {
+      "name": "H23",
+      "head": "unaffordable(R1,A1)",
+      "body": [
+        "over_budget(R1,A1)"
+      ]
+    },
+    {
+      "name": "H23",
+      "head": "unaffordable(R1,E1)",
+      "body": [
+        "over_budget(R1,E1)"
+      ]
+    },
+    {
+      "name": "H23",
+      "head": "unaffordable(R1,M1)",
+      "body": [
+        "over_budget(R1,M1)"
+      ]
+    },
+    {
+      "name": "H23",
+      "head": "unaffordable(R1,G3)",
+      "body": [
+        "over_budget(R1,G3)"
+      ]
+    },
+    {
+      "name": "H23",
+      "head": "unaffordable(R1,G4)",
+      "body": [
+        "over_budget(R1,G4)"
+      ]
+    },
+    {
+      "name": "H23",
+      "head": "unaffordable(R1,E2)",
+      "body": [
+        "over_budget(R1,E2)"
+      ]
+    },
+    {
+      "name": "H23",
+      "head": "unaffordable(R1,A2)",
+      "body": [
+        "over_budget(R1,A2)"
+      ]
+    },
+    {
+      "name": "H23",
+      "head": "unaffordable(R1,G5)",
+      "body": [
+        "over_budget(R1,G5)"
+      ]
+    },
+    {
+      "name": "H24",
+      "head": "duration_rejected(R1,G1)",
+      "body": [
+        "over_duration(R1,G1)"
+      ]
+    },
+    {
+      "name": "H24",
+      "head": "duration_rejected(R1,G2)",
+      "body": [
+        "over_duration(R1,G2)"
+      ]
+    },
+    {
+      "name": "H24",
+      "head": "duration_rejected(R1,A1)",
+      "body": [
+        "over_duration(R1,A1)"
+      ]
+    },
+    {
+      "name": "H24",
+      "head": "duration_rejected(R1,E1)",
+      "body": [
+        "over_duration(R1,E1)"
+      ]
+    },
+    {
+      "name": "H24",
+      "head": "duration_rejected(R1,M1)",
+      "body": [
+        "over_duration(R1,M1)"
+      ]
+    },
+    {
+      "name": "H24",
+      "head": "duration_rejected(R1,G3)",
+      "body": [
+        "over_duration(R1,G3)"
+      ]
+    },
+    {
+      "name": "H24",
+      "head": "duration_rejected(R1,G4)",
+      "body": [
+        "over_duration(R1,G4)"
+      ]
+    },
+    {
+      "name": "H24",
+      "head": "duration_rejected(R1,E2)",
+      "body": [
+        "over_duration(R1,E2)"
+      ]
+    },
+    {
+      "name": "H24",
+      "head": "duration_rejected(R1,A2)",
+      "body": [
+        "over_duration(R1,A2)"
+      ]
+    },
+    {
+      "name": "H24",
+      "head": "duration_rejected(R1,G5)",
+      "body": [
+        "over_duration(R1,G5)"
+      ]
+    },
+    {
+      "name": "H25",
+      "head": "identity_rejected(R1)",
+      "body": [
+        "unverified(R1)"
+      ]
+    },
+    {
+      "name": "H26",
+      "head": "schedule_rejected(R1)",
+      "body": [
+        "outside_hours(R1)"
+      ]
+    },
+    {
+      "name": "H27",
+      "head": "access_rejected(R1,G1)",
+      "body": [
+        "no_badge(R1)",
+        "accessible(G1)"
+      ]
+    },
+    {
+      "name": "H27",
+      "head": "access_rejected(R1,G2)",
+      "body": [
+        "no_badge(R1)",
+        "accessible(G2)"
+      ]
+    },
+    {
+      "name": "H27",
+      "head": "access_rejected(R1,A1)",
+      "body": [
+        "no_badge(R1)",
+        "accessible(A1)"
+      ]
+    },
+    {
+      "name": "H27",
+      "head": "access_rejected(R1,E1)",
+      "body": [
+        "no_badge(R1)",
+        "accessible(E1)"
+      ]
+    },
+    {
+      "name": "H27",
+      "head": "access_rejected(R1,M1)",
+      "body": [
+        "no_badge(R1)",
+        "accessible(M1)"
+      ]
+    },
+    {
+      "name": "H27",
+      "head": "access_rejected(R1,G3)",
+      "body": [
+        "no_badge(R1)",
+        "accessible(G3)"
+      ]
+    },
+    {
+      "name": "H27",
+      "head": "access_rejected(R1,G4)",
+      "body": [
+        "no_badge(R1)",
+        "accessible(G4)"
+      ]
+    },
+    {
+      "name": "H27",
+      "head": "access_rejected(R1,E2)",
+      "body": [
+        "no_badge(R1)",
+        "accessible(E2)"
+      ]
+    },
+    {
+      "name": "H27",
+      "head": "access_rejected(R1,A2)",
+      "body": [
+        "no_badge(R1)",
+        "accessible(A2)"
+      ]
+    },
+    {
+      "name": "H27",
+      "head": "access_rejected(R1,G5)",
+      "body": [
+        "no_badge(R1)",
+        "accessible(G5)"
+      ]
+    },
+    {
+      "name": "H28",
+      "head": "service_rejected(R1,G1)",
+      "body": [
+        "charge(R1)",
+        "noncharging(G1)"
+      ]
+    },
+    {
+      "name": "H28",
+      "head": "service_rejected(R1,G2)",
+      "body": [
+        "charge(R1)",
+        "noncharging(G2)"
+      ]
+    },
+    {
+      "name": "H28",
+      "head": "service_rejected(R1,A1)",
+      "body": [
+        "charge(R1)",
+        "noncharging(A1)"
+      ]
+    },
+    {
+      "name": "H28",
+      "head": "service_rejected(R1,E1)",
+      "body": [
+        "charge(R1)",
+        "noncharging(E1)"
+      ]
+    },
+    {
+      "name": "H28",
+      "head": "service_rejected(R1,M1)",
+      "body": [
+        "charge(R1)",
+        "noncharging(M1)"
+      ]
+    },
+    {
+      "name": "H28",
+      "head": "service_rejected(R1,G3)",
+      "body": [
+        "charge(R1)",
+        "noncharging(G3)"
+      ]
+    },
+    {
+      "name": "H28",
+      "head": "service_rejected(R1,G4)",
+      "body": [
+        "charge(R1)",
+        "noncharging(G4)"
+      ]
+    },
+    {
+      "name": "H28",
+      "head": "service_rejected(R1,E2)",
+      "body": [
+        "charge(R1)",
+        "noncharging(E2)"
+      ]
+    },
+    {
+      "name": "H28",
+      "head": "service_rejected(R1,A2)",
+      "body": [
+        "charge(R1)",
+        "noncharging(A2)"
+      ]
+    },
+    {
+      "name": "H28",
+      "head": "service_rejected(R1,G5)",
+      "body": [
+        "charge(R1)",
+        "noncharging(G5)"
+      ]
+    },
+    {
+      "name": "H32",
+      "head": "accessible_option(R1,G1)",
+      "body": [
+        "candidate(R1,G1)",
+        "accessible(G1)",
+        "badge(R1)"
+      ]
+    },
+    {
+      "name": "H32",
+      "head": "accessible_option(R1,G2)",
+      "body": [
+        "candidate(R1,G2)",
+        "accessible(G2)",
+        "badge(R1)"
+      ]
+    },
+    {
+      "name": "H32",
+      "head": "accessible_option(R1,A1)",
+      "body": [
+        "candidate(R1,A1)",
+        "accessible(A1)",
+        "badge(R1)"
+      ]
+    },
+    {
+      "name": "H32",
+      "head": "accessible_option(R1,E1)",
+      "body": [
+        "candidate(R1,E1)",
+        "accessible(E1)",
+        "badge(R1)"
+      ]
+    },
+    {
+      "name": "H32",
+      "head": "accessible_option(R1,M1)",
+      "body": [
+        "candidate(R1,M1)",
+        "accessible(M1)",
+        "badge(R1)"
+      ]
+    },
+    {
+      "name": "H32",
+      "head": "accessible_option(R1,G3)",
+      "body": [
+        "candidate(R1,G3)",
+        "accessible(G3)",
+        "badge(R1)"
+      ]
+    },
+    {
+      "name": "H32",
+      "head": "accessible_option(R1,G4)",
+      "body": [
+        "candidate(R1,G4)",
+        "accessible(G4)",
+        "badge(R1)"
+      ]
+    },
+    {
+      "name": "H32",
+      "head": "accessible_option(R1,E2)",
+      "body": [
+        "candidate(R1,E2)",
+        "accessible(E2)",
+        "badge(R1)"
+      ]
+    },
+    {
+      "name": "H32",
+      "head": "accessible_option(R1,A2)",
+      "body": [
+        "candidate(R1,A2)",
+        "accessible(A2)",
+        "badge(R1)"
+      ]
+    },
+    {
+      "name": "H32",
+      "head": "accessible_option(R1,G5)",
+      "body": [
+        "candidate(R1,G5)",
+        "accessible(G5)",
+        "badge(R1)"
+      ]
+    },
+    {
+      "name": "H33",
+      "head": "charging_option(R1,G1)",
+      "body": [
+        "candidate(R1,G1)",
+        "charging(G1)"
+      ]
+    },
+    {
+      "name": "H33",
+      "head": "charging_option(R1,G2)",
+      "body": [
+        "candidate(R1,G2)",
+        "charging(G2)"
+      ]
+    },
+    {
+      "name": "H33",
+      "head": "charging_option(R1,A1)",
+      "body": [
+        "candidate(R1,A1)",
+        "charging(A1)"
+      ]
+    },
+    {
+      "name": "H33",
+      "head": "charging_option(R1,E1)",
+      "body": [
+        "candidate(R1,E1)",
+        "charging(E1)"
+      ]
+    },
+    {
+      "name": "H33",
+      "head": "charging_option(R1,M1)",
+      "body": [
+        "candidate(R1,M1)",
+        "charging(M1)"
+      ]
+    },
+    {
+      "name": "H33",
+      "head": "charging_option(R1,G3)",
+      "body": [
+        "candidate(R1,G3)",
+        "charging(G3)"
+      ]
+    },
+    {
+      "name": "H33",
+      "head": "charging_option(R1,G4)",
+      "body": [
+        "candidate(R1,G4)",
+        "charging(G4)"
+      ]
+    },
+    {
+      "name": "H33",
+      "head": "charging_option(R1,E2)",
+      "body": [
+        "candidate(R1,E2)",
+        "charging(E2)"
+      ]
+    },
+    {
+      "name": "H33",
+      "head": "charging_option(R1,A2)",
+      "body": [
+        "candidate(R1,A2)",
+        "charging(A2)"
+      ]
+    },
+    {
+      "name": "H33",
+      "head": "charging_option(R1,G5)",
+      "body": [
+        "candidate(R1,G5)",
+        "charging(G5)"
+      ]
+    },
+    {
+      "name": "H34",
+      "head": "identity_rejected(R1)",
+      "body": [
+        "account_disabled(R1)"
+      ]
+    }
+  ]
+}

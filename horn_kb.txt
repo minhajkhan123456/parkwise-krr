@@ -1,0 +1,359 @@
+accessible(A1).
+accessible(A2).
+account_enabled(R1).
+bay(A1).
+bay(A2).
+bay(E1).
+bay(E2).
+bay(G1).
+bay(G2).
+bay(G3).
+bay(G4).
+bay(G5).
+bay(M1).
+booking_clear(R1,A1).
+booking_clear(R1,A2).
+booking_clear(R1,E1).
+booking_clear(R1,E2).
+booking_clear(R1,G1).
+booking_clear(R1,G2).
+booking_clear(R1,G3).
+booking_clear(R1,G4).
+booking_clear(R1,G5).
+booking_clear(R1,M1).
+budget_ok(R1,A1).
+budget_ok(R1,A2).
+budget_ok(R1,E1).
+budget_ok(R1,E2).
+budget_ok(R1,G1).
+budget_ok(R1,G2).
+budget_ok(R1,G3).
+budget_ok(R1,G4).
+budget_ok(R1,G5).
+budget_ok(R1,M1).
+car(R1).
+car_space(A1).
+car_space(A2).
+car_space(E1).
+car_space(E2).
+car_space(G1).
+car_space(G2).
+car_space(G3).
+car_space(G4).
+car_space(G5).
+charger_fault(E2).
+charger_ready(E1).
+charging(E1).
+charging(E2).
+dimension_exceeded(R1,G3).
+duration_ok(R1,A1).
+duration_ok(R1,A2).
+duration_ok(R1,E1).
+duration_ok(R1,E2).
+duration_ok(R1,G1).
+duration_ok(R1,G2).
+duration_ok(R1,G3).
+duration_ok(R1,G5).
+duration_ok(R1,M1).
+height_ok(R1,A1).
+height_ok(R1,A2).
+height_ok(R1,E1).
+height_ok(R1,E2).
+height_ok(R1,G1).
+height_ok(R1,G2).
+height_ok(R1,G4).
+height_ok(R1,G5).
+height_ok(R1,M1).
+inside_hours(R1).
+motorcycle_space(M1).
+no_badge(R1).
+no_charge(R1).
+noncharging(A1).
+noncharging(A2).
+noncharging(G1).
+noncharging(G2).
+noncharging(G3).
+noncharging(G4).
+noncharging(G5).
+noncharging(M1).
+operational(A1).
+operational(A2).
+operational(E1).
+operational(E2).
+operational(G1).
+operational(G2).
+operational(G3).
+operational(G4).
+operational(G5).
+operational(M1).
+over_duration(R1,G4).
+request(R1).
+sensor_free(A1).
+sensor_free(A2).
+sensor_free(E1).
+sensor_free(E2).
+sensor_free(G1).
+sensor_free(G2).
+sensor_free(G3).
+sensor_free(G4).
+sensor_free(M1).
+sensor_occupied(G5).
+unrestricted(E1).
+unrestricted(E2).
+unrestricted(G1).
+unrestricted(G2).
+unrestricted(G3).
+unrestricted(G4).
+unrestricted(G5).
+unrestricted(M1).
+valid_window(R1).
+verified(R1).
+width_ok(R1,A1).
+width_ok(R1,A2).
+width_ok(R1,E1).
+width_ok(R1,E2).
+width_ok(R1,G1).
+width_ok(R1,G2).
+width_ok(R1,G3).
+width_ok(R1,G4).
+width_ok(R1,G5).
+width_ok(R1,M1).
+
+authorized(R1) :- verified(R1), account_enabled(R1).  % H01
+schedulable(R1) :- request(R1), valid_window(R1), inside_hours(R1).  % H02
+car_sized(R1) :- car(R1).  % H03
+car_sized(R1) :- ev(R1).  % H04
+size_fit(R1,G1) :- car_sized(R1), car_space(G1).  % H05
+size_fit(R1,G2) :- car_sized(R1), car_space(G2).  % H05
+size_fit(R1,A1) :- car_sized(R1), car_space(A1).  % H05
+size_fit(R1,E1) :- car_sized(R1), car_space(E1).  % H05
+size_fit(R1,M1) :- car_sized(R1), car_space(M1).  % H05
+size_fit(R1,G3) :- car_sized(R1), car_space(G3).  % H05
+size_fit(R1,G4) :- car_sized(R1), car_space(G4).  % H05
+size_fit(R1,E2) :- car_sized(R1), car_space(E2).  % H05
+size_fit(R1,A2) :- car_sized(R1), car_space(A2).  % H05
+size_fit(R1,G5) :- car_sized(R1), car_space(G5).  % H05
+size_fit(R1,G1) :- motorcycle(R1), motorcycle_space(G1).  % H06
+size_fit(R1,G2) :- motorcycle(R1), motorcycle_space(G2).  % H06
+size_fit(R1,A1) :- motorcycle(R1), motorcycle_space(A1).  % H06
+size_fit(R1,E1) :- motorcycle(R1), motorcycle_space(E1).  % H06
+size_fit(R1,M1) :- motorcycle(R1), motorcycle_space(M1).  % H06
+size_fit(R1,G3) :- motorcycle(R1), motorcycle_space(G3).  % H06
+size_fit(R1,G4) :- motorcycle(R1), motorcycle_space(G4).  % H06
+size_fit(R1,E2) :- motorcycle(R1), motorcycle_space(E2).  % H06
+size_fit(R1,A2) :- motorcycle(R1), motorcycle_space(A2).  % H06
+size_fit(R1,G5) :- motorcycle(R1), motorcycle_space(G5).  % H06
+access_fit(R1,G1) :- request(R1), unrestricted(G1).  % H07
+access_fit(R1,G2) :- request(R1), unrestricted(G2).  % H07
+access_fit(R1,A1) :- request(R1), unrestricted(A1).  % H07
+access_fit(R1,E1) :- request(R1), unrestricted(E1).  % H07
+access_fit(R1,M1) :- request(R1), unrestricted(M1).  % H07
+access_fit(R1,G3) :- request(R1), unrestricted(G3).  % H07
+access_fit(R1,G4) :- request(R1), unrestricted(G4).  % H07
+access_fit(R1,E2) :- request(R1), unrestricted(E2).  % H07
+access_fit(R1,A2) :- request(R1), unrestricted(A2).  % H07
+access_fit(R1,G5) :- request(R1), unrestricted(G5).  % H07
+access_fit(R1,G1) :- badge(R1), accessible(G1).  % H08
+access_fit(R1,G2) :- badge(R1), accessible(G2).  % H08
+access_fit(R1,A1) :- badge(R1), accessible(A1).  % H08
+access_fit(R1,E1) :- badge(R1), accessible(E1).  % H08
+access_fit(R1,M1) :- badge(R1), accessible(M1).  % H08
+access_fit(R1,G3) :- badge(R1), accessible(G3).  % H08
+access_fit(R1,G4) :- badge(R1), accessible(G4).  % H08
+access_fit(R1,E2) :- badge(R1), accessible(E2).  % H08
+access_fit(R1,A2) :- badge(R1), accessible(A2).  % H08
+access_fit(R1,G5) :- badge(R1), accessible(G5).  % H08
+service_fit(R1,G1) :- no_charge(R1), noncharging(G1).  % H09
+service_fit(R1,G2) :- no_charge(R1), noncharging(G2).  % H09
+service_fit(R1,A1) :- no_charge(R1), noncharging(A1).  % H09
+service_fit(R1,E1) :- no_charge(R1), noncharging(E1).  % H09
+service_fit(R1,M1) :- no_charge(R1), noncharging(M1).  % H09
+service_fit(R1,G3) :- no_charge(R1), noncharging(G3).  % H09
+service_fit(R1,G4) :- no_charge(R1), noncharging(G4).  % H09
+service_fit(R1,E2) :- no_charge(R1), noncharging(E2).  % H09
+service_fit(R1,A2) :- no_charge(R1), noncharging(A2).  % H09
+service_fit(R1,G5) :- no_charge(R1), noncharging(G5).  % H09
+service_fit(R1,G1) :- charge(R1), ev(R1), charging(G1), charger_ready(G1).  % H10
+service_fit(R1,G2) :- charge(R1), ev(R1), charging(G2), charger_ready(G2).  % H10
+service_fit(R1,A1) :- charge(R1), ev(R1), charging(A1), charger_ready(A1).  % H10
+service_fit(R1,E1) :- charge(R1), ev(R1), charging(E1), charger_ready(E1).  % H10
+service_fit(R1,M1) :- charge(R1), ev(R1), charging(M1), charger_ready(M1).  % H10
+service_fit(R1,G3) :- charge(R1), ev(R1), charging(G3), charger_ready(G3).  % H10
+service_fit(R1,G4) :- charge(R1), ev(R1), charging(G4), charger_ready(G4).  % H10
+service_fit(R1,E2) :- charge(R1), ev(R1), charging(E2), charger_ready(E2).  % H10
+service_fit(R1,A2) :- charge(R1), ev(R1), charging(A2), charger_ready(A2).  % H10
+service_fit(R1,G5) :- charge(R1), ev(R1), charging(G5), charger_ready(G5).  % H10
+dimension_fit(R1,G1) :- height_ok(R1,G1), width_ok(R1,G1).  % H11
+dimension_fit(R1,G2) :- height_ok(R1,G2), width_ok(R1,G2).  % H11
+dimension_fit(R1,A1) :- height_ok(R1,A1), width_ok(R1,A1).  % H11
+dimension_fit(R1,E1) :- height_ok(R1,E1), width_ok(R1,E1).  % H11
+dimension_fit(R1,M1) :- height_ok(R1,M1), width_ok(R1,M1).  % H11
+dimension_fit(R1,G3) :- height_ok(R1,G3), width_ok(R1,G3).  % H11
+dimension_fit(R1,G4) :- height_ok(R1,G4), width_ok(R1,G4).  % H11
+dimension_fit(R1,E2) :- height_ok(R1,E2), width_ok(R1,E2).  % H11
+dimension_fit(R1,A2) :- height_ok(R1,A2), width_ok(R1,A2).  % H11
+dimension_fit(R1,G5) :- height_ok(R1,G5), width_ok(R1,G5).  % H11
+commercial_fit(R1,G1) :- budget_ok(R1,G1), duration_ok(R1,G1).  % H12
+commercial_fit(R1,G2) :- budget_ok(R1,G2), duration_ok(R1,G2).  % H12
+commercial_fit(R1,A1) :- budget_ok(R1,A1), duration_ok(R1,A1).  % H12
+commercial_fit(R1,E1) :- budget_ok(R1,E1), duration_ok(R1,E1).  % H12
+commercial_fit(R1,M1) :- budget_ok(R1,M1), duration_ok(R1,M1).  % H12
+commercial_fit(R1,G3) :- budget_ok(R1,G3), duration_ok(R1,G3).  % H12
+commercial_fit(R1,G4) :- budget_ok(R1,G4), duration_ok(R1,G4).  % H12
+commercial_fit(R1,E2) :- budget_ok(R1,E2), duration_ok(R1,E2).  % H12
+commercial_fit(R1,A2) :- budget_ok(R1,A2), duration_ok(R1,A2).  % H12
+commercial_fit(R1,G5) :- budget_ok(R1,G5), duration_ok(R1,G5).  % H12
+compatible(R1,G1) :- size_fit(R1,G1), access_fit(R1,G1), service_fit(R1,G1), dimension_fit(R1,G1).  % H13
+compatible(R1,G2) :- size_fit(R1,G2), access_fit(R1,G2), service_fit(R1,G2), dimension_fit(R1,G2).  % H13
+compatible(R1,A1) :- size_fit(R1,A1), access_fit(R1,A1), service_fit(R1,A1), dimension_fit(R1,A1).  % H13
+compatible(R1,E1) :- size_fit(R1,E1), access_fit(R1,E1), service_fit(R1,E1), dimension_fit(R1,E1).  % H13
+compatible(R1,M1) :- size_fit(R1,M1), access_fit(R1,M1), service_fit(R1,M1), dimension_fit(R1,M1).  % H13
+compatible(R1,G3) :- size_fit(R1,G3), access_fit(R1,G3), service_fit(R1,G3), dimension_fit(R1,G3).  % H13
+compatible(R1,G4) :- size_fit(R1,G4), access_fit(R1,G4), service_fit(R1,G4), dimension_fit(R1,G4).  % H13
+compatible(R1,E2) :- size_fit(R1,E2), access_fit(R1,E2), service_fit(R1,E2), dimension_fit(R1,E2).  % H13
+compatible(R1,A2) :- size_fit(R1,A2), access_fit(R1,A2), service_fit(R1,A2), dimension_fit(R1,A2).  % H13
+compatible(R1,G5) :- size_fit(R1,G5), access_fit(R1,G5), service_fit(R1,G5), dimension_fit(R1,G5).  % H13
+available(R1,G1) :- bay(G1), operational(G1), sensor_free(G1), booking_clear(R1,G1).  % H14
+available(R1,G2) :- bay(G2), operational(G2), sensor_free(G2), booking_clear(R1,G2).  % H14
+available(R1,A1) :- bay(A1), operational(A1), sensor_free(A1), booking_clear(R1,A1).  % H14
+available(R1,E1) :- bay(E1), operational(E1), sensor_free(E1), booking_clear(R1,E1).  % H14
+available(R1,M1) :- bay(M1), operational(M1), sensor_free(M1), booking_clear(R1,M1).  % H14
+available(R1,G3) :- bay(G3), operational(G3), sensor_free(G3), booking_clear(R1,G3).  % H14
+available(R1,G4) :- bay(G4), operational(G4), sensor_free(G4), booking_clear(R1,G4).  % H14
+available(R1,E2) :- bay(E2), operational(E2), sensor_free(E2), booking_clear(R1,E2).  % H14
+available(R1,A2) :- bay(A2), operational(A2), sensor_free(A2), booking_clear(R1,A2).  % H14
+available(R1,G5) :- bay(G5), operational(G5), sensor_free(G5), booking_clear(R1,G5).  % H14
+admissible(R1) :- authorized(R1), schedulable(R1).  % H15
+candidate(R1,G1) :- admissible(R1), compatible(R1,G1), available(R1,G1), commercial_fit(R1,G1).  % H16
+candidate(R1,G2) :- admissible(R1), compatible(R1,G2), available(R1,G2), commercial_fit(R1,G2).  % H16
+candidate(R1,A1) :- admissible(R1), compatible(R1,A1), available(R1,A1), commercial_fit(R1,A1).  % H16
+candidate(R1,E1) :- admissible(R1), compatible(R1,E1), available(R1,E1), commercial_fit(R1,E1).  % H16
+candidate(R1,M1) :- admissible(R1), compatible(R1,M1), available(R1,M1), commercial_fit(R1,M1).  % H16
+candidate(R1,G3) :- admissible(R1), compatible(R1,G3), available(R1,G3), commercial_fit(R1,G3).  % H16
+candidate(R1,G4) :- admissible(R1), compatible(R1,G4), available(R1,G4), commercial_fit(R1,G4).  % H16
+candidate(R1,E2) :- admissible(R1), compatible(R1,E2), available(R1,E2), commercial_fit(R1,E2).  % H16
+candidate(R1,A2) :- admissible(R1), compatible(R1,A2), available(R1,A2), commercial_fit(R1,A2).  % H16
+candidate(R1,G5) :- admissible(R1), compatible(R1,G5), available(R1,G5), commercial_fit(R1,G5).  % H16
+blocked(R1,G1) :- booking_conflict(R1,G1).  % H17
+blocked(R1,G2) :- booking_conflict(R1,G2).  % H17
+blocked(R1,A1) :- booking_conflict(R1,A1).  % H17
+blocked(R1,E1) :- booking_conflict(R1,E1).  % H17
+blocked(R1,M1) :- booking_conflict(R1,M1).  % H17
+blocked(R1,G3) :- booking_conflict(R1,G3).  % H17
+blocked(R1,G4) :- booking_conflict(R1,G4).  % H17
+blocked(R1,E2) :- booking_conflict(R1,E2).  % H17
+blocked(R1,A2) :- booking_conflict(R1,A2).  % H17
+blocked(R1,G5) :- booking_conflict(R1,G5).  % H17
+blocked(R1,G1) :- request(R1), closed(G1).  % H18
+blocked(R1,G2) :- request(R1), closed(G2).  % H18
+blocked(R1,A1) :- request(R1), closed(A1).  % H18
+blocked(R1,E1) :- request(R1), closed(E1).  % H18
+blocked(R1,M1) :- request(R1), closed(M1).  % H18
+blocked(R1,G3) :- request(R1), closed(G3).  % H18
+blocked(R1,G4) :- request(R1), closed(G4).  % H18
+blocked(R1,E2) :- request(R1), closed(E2).  % H18
+blocked(R1,A2) :- request(R1), closed(A2).  % H18
+blocked(R1,G5) :- request(R1), closed(G5).  % H18
+blocked(R1,G1) :- request(R1), sensor_occupied(G1).  % H19
+blocked(R1,G2) :- request(R1), sensor_occupied(G2).  % H19
+blocked(R1,A1) :- request(R1), sensor_occupied(A1).  % H19
+blocked(R1,E1) :- request(R1), sensor_occupied(E1).  % H19
+blocked(R1,M1) :- request(R1), sensor_occupied(M1).  % H19
+blocked(R1,G3) :- request(R1), sensor_occupied(G3).  % H19
+blocked(R1,G4) :- request(R1), sensor_occupied(G4).  % H19
+blocked(R1,E2) :- request(R1), sensor_occupied(E2).  % H19
+blocked(R1,A2) :- request(R1), sensor_occupied(A2).  % H19
+blocked(R1,G5) :- request(R1), sensor_occupied(G5).  % H19
+manual_review(R1,G1) :- request(R1), sensor_unknown(G1).  % H20
+manual_review(R1,G2) :- request(R1), sensor_unknown(G2).  % H20
+manual_review(R1,A1) :- request(R1), sensor_unknown(A1).  % H20
+manual_review(R1,E1) :- request(R1), sensor_unknown(E1).  % H20
+manual_review(R1,M1) :- request(R1), sensor_unknown(M1).  % H20
+manual_review(R1,G3) :- request(R1), sensor_unknown(G3).  % H20
+manual_review(R1,G4) :- request(R1), sensor_unknown(G4).  % H20
+manual_review(R1,E2) :- request(R1), sensor_unknown(E2).  % H20
+manual_review(R1,A2) :- request(R1), sensor_unknown(A2).  % H20
+manual_review(R1,G5) :- request(R1), sensor_unknown(G5).  % H20
+blocked(R1,G1) :- charge(R1), charger_fault(G1).  % H21
+blocked(R1,G2) :- charge(R1), charger_fault(G2).  % H21
+blocked(R1,A1) :- charge(R1), charger_fault(A1).  % H21
+blocked(R1,E1) :- charge(R1), charger_fault(E1).  % H21
+blocked(R1,M1) :- charge(R1), charger_fault(M1).  % H21
+blocked(R1,G3) :- charge(R1), charger_fault(G3).  % H21
+blocked(R1,G4) :- charge(R1), charger_fault(G4).  % H21
+blocked(R1,E2) :- charge(R1), charger_fault(E2).  % H21
+blocked(R1,A2) :- charge(R1), charger_fault(A2).  % H21
+blocked(R1,G5) :- charge(R1), charger_fault(G5).  % H21
+blocked(R1,G1) :- dimension_exceeded(R1,G1).  % H22
+blocked(R1,G2) :- dimension_exceeded(R1,G2).  % H22
+blocked(R1,A1) :- dimension_exceeded(R1,A1).  % H22
+blocked(R1,E1) :- dimension_exceeded(R1,E1).  % H22
+blocked(R1,M1) :- dimension_exceeded(R1,M1).  % H22
+blocked(R1,G3) :- dimension_exceeded(R1,G3).  % H22
+blocked(R1,G4) :- dimension_exceeded(R1,G4).  % H22
+blocked(R1,E2) :- dimension_exceeded(R1,E2).  % H22
+blocked(R1,A2) :- dimension_exceeded(R1,A2).  % H22
+blocked(R1,G5) :- dimension_exceeded(R1,G5).  % H22
+unaffordable(R1,G1) :- over_budget(R1,G1).  % H23
+unaffordable(R1,G2) :- over_budget(R1,G2).  % H23
+unaffordable(R1,A1) :- over_budget(R1,A1).  % H23
+unaffordable(R1,E1) :- over_budget(R1,E1).  % H23
+unaffordable(R1,M1) :- over_budget(R1,M1).  % H23
+unaffordable(R1,G3) :- over_budget(R1,G3).  % H23
+unaffordable(R1,G4) :- over_budget(R1,G4).  % H23
+unaffordable(R1,E2) :- over_budget(R1,E2).  % H23
+unaffordable(R1,A2) :- over_budget(R1,A2).  % H23
+unaffordable(R1,G5) :- over_budget(R1,G5).  % H23
+duration_rejected(R1,G1) :- over_duration(R1,G1).  % H24
+duration_rejected(R1,G2) :- over_duration(R1,G2).  % H24
+duration_rejected(R1,A1) :- over_duration(R1,A1).  % H24
+duration_rejected(R1,E1) :- over_duration(R1,E1).  % H24
+duration_rejected(R1,M1) :- over_duration(R1,M1).  % H24
+duration_rejected(R1,G3) :- over_duration(R1,G3).  % H24
+duration_rejected(R1,G4) :- over_duration(R1,G4).  % H24
+duration_rejected(R1,E2) :- over_duration(R1,E2).  % H24
+duration_rejected(R1,A2) :- over_duration(R1,A2).  % H24
+duration_rejected(R1,G5) :- over_duration(R1,G5).  % H24
+identity_rejected(R1) :- unverified(R1).  % H25
+schedule_rejected(R1) :- outside_hours(R1).  % H26
+access_rejected(R1,G1) :- no_badge(R1), accessible(G1).  % H27
+access_rejected(R1,G2) :- no_badge(R1), accessible(G2).  % H27
+access_rejected(R1,A1) :- no_badge(R1), accessible(A1).  % H27
+access_rejected(R1,E1) :- no_badge(R1), accessible(E1).  % H27
+access_rejected(R1,M1) :- no_badge(R1), accessible(M1).  % H27
+access_rejected(R1,G3) :- no_badge(R1), accessible(G3).  % H27
+access_rejected(R1,G4) :- no_badge(R1), accessible(G4).  % H27
+access_rejected(R1,E2) :- no_badge(R1), accessible(E2).  % H27
+access_rejected(R1,A2) :- no_badge(R1), accessible(A2).  % H27
+access_rejected(R1,G5) :- no_badge(R1), accessible(G5).  % H27
+service_rejected(R1,G1) :- charge(R1), noncharging(G1).  % H28
+service_rejected(R1,G2) :- charge(R1), noncharging(G2).  % H28
+service_rejected(R1,A1) :- charge(R1), noncharging(A1).  % H28
+service_rejected(R1,E1) :- charge(R1), noncharging(E1).  % H28
+service_rejected(R1,M1) :- charge(R1), noncharging(M1).  % H28
+service_rejected(R1,G3) :- charge(R1), noncharging(G3).  % H28
+service_rejected(R1,G4) :- charge(R1), noncharging(G4).  % H28
+service_rejected(R1,E2) :- charge(R1), noncharging(E2).  % H28
+service_rejected(R1,A2) :- charge(R1), noncharging(A2).  % H28
+service_rejected(R1,G5) :- charge(R1), noncharging(G5).  % H28
+accessible_option(R1,G1) :- candidate(R1,G1), accessible(G1), badge(R1).  % H32
+accessible_option(R1,G2) :- candidate(R1,G2), accessible(G2), badge(R1).  % H32
+accessible_option(R1,A1) :- candidate(R1,A1), accessible(A1), badge(R1).  % H32
+accessible_option(R1,E1) :- candidate(R1,E1), accessible(E1), badge(R1).  % H32
+accessible_option(R1,M1) :- candidate(R1,M1), accessible(M1), badge(R1).  % H32
+accessible_option(R1,G3) :- candidate(R1,G3), accessible(G3), badge(R1).  % H32
+accessible_option(R1,G4) :- candidate(R1,G4), accessible(G4), badge(R1).  % H32
+accessible_option(R1,E2) :- candidate(R1,E2), accessible(E2), badge(R1).  % H32
+accessible_option(R1,A2) :- candidate(R1,A2), accessible(A2), badge(R1).  % H32
+accessible_option(R1,G5) :- candidate(R1,G5), accessible(G5), badge(R1).  % H32
+charging_option(R1,G1) :- candidate(R1,G1), charging(G1).  % H33
+charging_option(R1,G2) :- candidate(R1,G2), charging(G2).  % H33
+charging_option(R1,A1) :- candidate(R1,A1), charging(A1).  % H33
+charging_option(R1,E1) :- candidate(R1,E1), charging(E1).  % H33
+charging_option(R1,M1) :- candidate(R1,M1), charging(M1).  % H33
+charging_option(R1,G3) :- candidate(R1,G3), charging(G3).  % H33
+charging_option(R1,G4) :- candidate(R1,G4), charging(G4).  % H33
+charging_option(R1,E2) :- candidate(R1,E2), charging(E2).  % H33
+charging_option(R1,A2) :- candidate(R1,A2), charging(A2).  % H33
+charging_option(R1,G5) :- candidate(R1,G5), charging(G5).  % H33
+identity_rejected(R1) :- account_disabled(R1).  % H34

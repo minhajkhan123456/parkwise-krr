@@ -1,0 +1,1 @@
+{"name":"parkwise-krr","version":"2.0.0","private":true,"description":"Offline KRR simulation; npm is needed only for DOM tests","scripts":{"test":"node test_ui.cjs"},"devDependencies":{"jsdom":"31.0.0"}}

@@ -1,0 +1,323 @@
+{
+  "parity_cases": 616,
+  "parity": "PASS",
+  "policy_schemas": 34,
+  "scenarios": {
+    "normal": {
+      "title": "Standard car: G1 is nearest eligible bay.",
+      "recommended": "G1",
+      "candidates": [
+        "G1",
+        "G2"
+      ],
+      "invariants": {
+        "IC1_unique_bay_ids": true,
+        "IC2_unique_booking_ids": true,
+        "IC3_known_bay_reference": true,
+        "IC4_no_overlap": true,
+        "IC5_valid_intervals": true,
+        "IC6_operating_hours_at_booking": true,
+        "IC7_charging_vehicle": true,
+        "IC8_verified_enabled_at_booking": true
+      }
+    },
+    "overlap": {
+      "title": "Partial interval overlap moves the next car to G2.",
+      "recommended": "G2",
+      "candidates": [
+        "G2"
+      ],
+      "invariants": {
+        "IC1_unique_bay_ids": true,
+        "IC2_unique_booking_ids": true,
+        "IC3_known_bay_reference": true,
+        "IC4_no_overlap": true,
+        "IC5_valid_intervals": true,
+        "IC6_operating_hours_at_booking": true,
+        "IC7_charging_vehicle": true,
+        "IC8_verified_enabled_at_booking": true
+      }
+    },
+    "adjacent": {
+      "title": "A departure at 10:00 permits a new arrival at 10:00.",
+      "recommended": "G1",
+      "candidates": [
+        "G1",
+        "G2"
+      ],
+      "invariants": {
+        "IC1_unique_bay_ids": true,
+        "IC2_unique_booking_ids": true,
+        "IC3_known_bay_reference": true,
+        "IC4_no_overlap": true,
+        "IC5_valid_intervals": true,
+        "IC6_operating_hours_at_booking": true,
+        "IC7_charging_vehicle": true,
+        "IC8_verified_enabled_at_booking": true
+      }
+    },
+    "ev": {
+      "title": "EV charging uses E1; E2 has a charger fault.",
+      "recommended": "E1",
+      "candidates": [
+        "E1"
+      ],
+      "invariants": {
+        "IC1_unique_bay_ids": true,
+        "IC2_unique_booking_ids": true,
+        "IC3_known_bay_reference": true,
+        "IC4_no_overlap": true,
+        "IC5_valid_intervals": true,
+        "IC6_operating_hours_at_booking": true,
+        "IC7_charging_vehicle": true,
+        "IC8_verified_enabled_at_booking": true
+      }
+    },
+    "badge": {
+      "title": "Badge holder can use A1 and A2; A1 is nearest.",
+      "recommended": "A1",
+      "candidates": [
+        "A1",
+        "G1",
+        "G2",
+        "A2"
+      ],
+      "invariants": {
+        "IC1_unique_bay_ids": true,
+        "IC2_unique_booking_ids": true,
+        "IC3_known_bay_reference": true,
+        "IC4_no_overlap": true,
+        "IC5_valid_intervals": true,
+        "IC6_operating_hours_at_booking": true,
+        "IC7_charging_vehicle": true,
+        "IC8_verified_enabled_at_booking": true
+      }
+    },
+    "budget": {
+      "title": "PKR 85 budget excludes G1 but allows G2.",
+      "recommended": "G2",
+      "candidates": [
+        "G2"
+      ],
+      "invariants": {
+        "IC1_unique_bay_ids": true,
+        "IC2_unique_booking_ids": true,
+        "IC3_known_bay_reference": true,
+        "IC4_no_overlap": true,
+        "IC5_valid_intervals": true,
+        "IC6_operating_hours_at_booking": true,
+        "IC7_charging_vehicle": true,
+        "IC8_verified_enabled_at_booking": true
+      }
+    },
+    "compact": {
+      "title": "A compact car with PKR 60 budget fits the upper deck.",
+      "recommended": "G3",
+      "candidates": [
+        "G3"
+      ],
+      "invariants": {
+        "IC1_unique_bay_ids": true,
+        "IC2_unique_booking_ids": true,
+        "IC3_known_bay_reference": true,
+        "IC4_no_overlap": true,
+        "IC5_valid_intervals": true,
+        "IC6_operating_hours_at_booking": true,
+        "IC7_charging_vehicle": true,
+        "IC8_verified_enabled_at_booking": true
+      }
+    },
+    "sensor": {
+      "title": "G1 occupancy is unknown, so manual review is required.",
+      "recommended": "G2",
+      "candidates": [
+        "G2"
+      ],
+      "invariants": {
+        "IC1_unique_bay_ids": true,
+        "IC2_unique_booking_ids": true,
+        "IC3_known_bay_reference": true,
+        "IC4_no_overlap": true,
+        "IC5_valid_intervals": true,
+        "IC6_operating_hours_at_booking": true,
+        "IC7_charging_vehicle": true,
+        "IC8_verified_enabled_at_booking": true
+      }
+    },
+    "maintenance": {
+      "title": "G1 closes after confirmation. Use Move on R1 for safe reallocation.",
+      "recommended": "G2",
+      "candidates": [
+        "G2"
+      ],
+      "invariants": {
+        "IC1_unique_bay_ids": true,
+        "IC2_unique_booking_ids": true,
+        "IC3_known_bay_reference": true,
+        "IC4_no_overlap": true,
+        "IC5_valid_intervals": true,
+        "IC6_operating_hours_at_booking": true,
+        "IC7_charging_vehicle": true,
+        "IC8_verified_enabled_at_booking": true
+      }
+    },
+    "full": {
+      "title": "Both compatible general bays are booked; no candidate remains.",
+      "recommended": null,
+      "candidates": [],
+      "invariants": {
+        "IC1_unique_bay_ids": true,
+        "IC2_unique_booking_ids": true,
+        "IC3_known_bay_reference": true,
+        "IC4_no_overlap": true,
+        "IC5_valid_intervals": true,
+        "IC6_operating_hours_at_booking": true,
+        "IC7_charging_vehicle": true,
+        "IC8_verified_enabled_at_booking": true
+      }
+    },
+    "oversize": {
+      "title": "A 2.5 m vehicle exceeds every bay height limit.",
+      "recommended": null,
+      "candidates": [],
+      "invariants": {
+        "IC1_unique_bay_ids": true,
+        "IC2_unique_booking_ids": true,
+        "IC3_known_bay_reference": true,
+        "IC4_no_overlap": true,
+        "IC5_valid_intervals": true,
+        "IC6_operating_hours_at_booking": true,
+        "IC7_charging_vehicle": true,
+        "IC8_verified_enabled_at_booking": true
+      }
+    },
+    "afterhours": {
+      "title": "05:00-06:00 is outside the facility schedule.",
+      "recommended": null,
+      "candidates": [],
+      "invariants": {
+        "IC1_unique_bay_ids": true,
+        "IC2_unique_booking_ids": true,
+        "IC3_known_bay_reference": true,
+        "IC4_no_overlap": true,
+        "IC5_valid_intervals": true,
+        "IC6_operating_hours_at_booking": true,
+        "IC7_charging_vehicle": true,
+        "IC8_verified_enabled_at_booking": true
+      }
+    },
+    "duration": {
+      "title": "A 30-minute stay with PKR 35 budget uses G4.",
+      "recommended": "G4",
+      "candidates": [
+        "G4"
+      ],
+      "invariants": {
+        "IC1_unique_bay_ids": true,
+        "IC2_unique_booking_ids": true,
+        "IC3_known_bay_reference": true,
+        "IC4_no_overlap": true,
+        "IC5_valid_intervals": true,
+        "IC6_operating_hours_at_booking": true,
+        "IC7_charging_vehicle": true,
+        "IC8_verified_enabled_at_booking": true
+      }
+    },
+    "motorcycle": {
+      "title": "Motorcycle category uses M1.",
+      "recommended": "M1",
+      "candidates": [
+        "M1"
+      ],
+      "invariants": {
+        "IC1_unique_bay_ids": true,
+        "IC2_unique_booking_ids": true,
+        "IC3_known_bay_reference": true,
+        "IC4_no_overlap": true,
+        "IC5_valid_intervals": true,
+        "IC6_operating_hours_at_booking": true,
+        "IC7_charging_vehicle": true,
+        "IC8_verified_enabled_at_booking": true
+      }
+    },
+    "fault": {
+      "title": "Both charging units are faulty, so charging is unavailable.",
+      "recommended": null,
+      "candidates": [],
+      "invariants": {
+        "IC1_unique_bay_ids": true,
+        "IC2_unique_booking_ids": true,
+        "IC3_known_bay_reference": true,
+        "IC4_no_overlap": true,
+        "IC5_valid_intervals": true,
+        "IC6_operating_hours_at_booking": true,
+        "IC7_charging_vehicle": true,
+        "IC8_verified_enabled_at_booking": true
+      }
+    },
+    "disabled": {
+      "title": "A disabled account cannot receive a candidate.",
+      "recommended": null,
+      "candidates": [],
+      "invariants": {
+        "IC1_unique_bay_ids": true,
+        "IC2_unique_booking_ids": true,
+        "IC3_known_bay_reference": true,
+        "IC4_no_overlap": true,
+        "IC5_valid_intervals": true,
+        "IC6_operating_hours_at_booking": true,
+        "IC7_charging_vehicle": true,
+        "IC8_verified_enabled_at_booking": true
+      }
+    }
+  },
+  "benchmark": [
+    {
+      "bays": 10,
+      "facts": 120,
+      "ground_rules": 238,
+      "scan_ms": 0.617,
+      "indexed_ms": 0.341
+    },
+    {
+      "bays": 100,
+      "facts": 1128,
+      "ground_rules": 2308,
+      "scan_ms": 5.743,
+      "indexed_ms": 2.184
+    },
+    {
+      "bays": 500,
+      "facts": 5608,
+      "ground_rules": 11508,
+      "scan_ms": 26.924,
+      "indexed_ms": 12.989
+    }
+  ],
+  "classification": {
+    "types": {
+      "G1": [
+        "Bay",
+        "GeneralBay"
+      ],
+      "E1": [
+        "Bay",
+        "ChargingBay"
+      ],
+      "bad": [
+        "Bay",
+        "ChargingBay",
+        "GeneralBay"
+      ]
+    },
+    "violations": [
+      {
+        "instance": "bad",
+        "disjoint": [
+          "GeneralBay",
+          "ChargingBay"
+        ]
+      }
+    ]
+  }
+}

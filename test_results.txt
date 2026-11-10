@@ -1,0 +1,49 @@
+test_account_disabled (test_engine.ParkingTests.test_account_disabled) ... ok
+test_active_lifecycle (test_engine.ParkingTests.test_active_lifecycle) ... ok
+test_atomic_move_rollback (test_engine.ParkingTests.test_atomic_move_rollback) ... ok
+test_atomic_move_success (test_engine.ParkingTests.test_atomic_move_success) ... ok
+test_badge (test_engine.ParkingTests.test_badge) ... ok
+test_boundary (test_engine.ParkingTests.test_boundary) ... ok
+test_budget (test_engine.ParkingTests.test_budget) ... ok
+test_cancel (test_engine.ParkingTests.test_cancel) ... ok
+test_charging_fault (test_engine.ParkingTests.test_charging_fault) ... ok
+test_closed (test_engine.ParkingTests.test_closed) ... ok
+test_closed_booking_reallocation (test_engine.ParkingTests.test_closed_booking_reallocation) ... ok
+test_compact_budget (test_engine.ParkingTests.test_compact_budget) ... ok
+test_completed_lifecycle (test_engine.ParkingTests.test_completed_lifecycle) ... ok
+test_containment (test_engine.ParkingTests.test_containment) ... ok
+test_cycle_terminates (test_engine.ParkingTests.test_cycle_terminates) ... ok
+test_duplicate_body (test_engine.ParkingTests.test_duplicate_body) ... ok
+test_duplicate_id (test_engine.ParkingTests.test_duplicate_id) ... ok
+test_empty_body (test_engine.ParkingTests.test_empty_body) ... ok
+test_engines_all_ground_atoms (test_engine.ParkingTests.test_engines_all_ground_atoms) ... ok
+test_ev_charge (test_engine.ParkingTests.test_ev_charge) ... ok
+test_forward_cycle (test_engine.ParkingTests.test_forward_cycle) ... ok
+test_frame_inheritance (test_engine.ParkingTests.test_frame_inheritance) ... ok
+test_full (test_engine.ParkingTests.test_full) ... ok
+test_general (test_engine.ParkingTests.test_general) ... ok
+test_head_index_multiple_rules (test_engine.ParkingTests.test_head_index_multiple_rules) ... ok
+test_hours (test_engine.ParkingTests.test_hours) ... ok
+test_inconsistent_bookings (test_engine.ParkingTests.test_inconsistent_bookings) ... ok
+test_invalid_charging (test_engine.ParkingTests.test_invalid_charging) ... ok
+test_invalid_time (test_engine.ParkingTests.test_invalid_time) ... ok
+test_motorcycle (test_engine.ParkingTests.test_motorcycle) ... ok
+test_nan_rejected (test_engine.ParkingTests.test_nan_rejected) ... ok
+test_overlap (test_engine.ParkingTests.test_overlap) ... ok
+test_oversize (test_engine.ParkingTests.test_oversize) ... ok
+test_pending_lifecycle (test_engine.ParkingTests.test_pending_lifecycle) ... ok
+test_sensor_unknown (test_engine.ParkingTests.test_sensor_unknown) ... ok
+test_short_stay (test_engine.ParkingTests.test_short_stay) ... ok
+test_tie (test_engine.ParkingTests.test_tie) ... ok
+test_unverified (test_engine.ParkingTests.test_unverified) ... ok
+test_consistent (test_theory.TheoryTests.test_consistent) ... ok
+test_disjoint (test_theory.TheoryTests.test_disjoint) ... ok
+test_invariants (test_theory.TheoryTests.test_invariants) ... ok
+test_overlap_counterexample (test_theory.TheoryTests.test_overlap_counterexample) ... ok
+test_reference_counterexample (test_theory.TheoryTests.test_reference_counterexample) ... ok
+test_subclass (test_theory.TheoryTests.test_subclass) ... ok
+
+----------------------------------------------------------------------
+Ran 44 tests in 1.636s
+
+OK
